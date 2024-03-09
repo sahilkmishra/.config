@@ -90,6 +90,13 @@ require("lazy").setup({
 					only_render_image_at_cursor = false,
 					filetypes = { "markdown", "md" }, -- markdown extensions (ie. quarto) can go here
 				},
+				neorg = {
+					enabled = true,
+					clear_in_insert_mode = false,
+					download_remote_images = true,
+					only_render_image_at_cursor = false,
+					filetypes = { "norg" },
+				},
 			},
 			max_width = nil,
 			max_height = nil,
@@ -287,3 +294,11 @@ require("image").setup({
 		},
 	},
 })
+require("notify")
+
+vim.api.nvim_create_autocmd("BufWritePost", {
+	pattern = { "*.tex" },
+	command = "!pdflatex %",
+})
+
+--local latex = require("sahil/autocommands.latex") Create an autocommand group to avoid duplicating autocommands vim.api.nvim_create_augroup("LatexAutoCommands", { clear = true }) Set up the autocommand to run latexmk after saving a .tex file vim.api.nvim_create_autocmd("BufWritePost", { pattern = "*.tex", callback = latex.run_latexmk, group = "LatexAutoCommands", })
