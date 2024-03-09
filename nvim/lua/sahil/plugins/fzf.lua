@@ -24,6 +24,7 @@ return {
 			vim.api.nvim_set_keymap("n", "<Leader>fh", ":FzfLua help_tags<CR>", { noremap = true, silent = true })
 			vim.api.nvim_set_keymap("n", "<Leader>fr", ":FzfLua resume<CR>", { noremap = true, silent = true })
 			vim.api.nvim_set_keymap("n", "<Leader>ff", ":FzfLua builtin<CR>", { noremap = false, silent = true })
+			vim.api.nvim_set_keymap("n", "<Leader>w", "<C-w>", { noremap = false, silent = true })
 		end,
 	},
 }

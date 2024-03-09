@@ -1,4 +1,5 @@
 return {
+	"tamton-aquib/neorg-jupyter",
 	"ms-jpq/chadtree",
 	"amrbashir/nvim-docs-view",
 	"wbthomason/packer.nvim",
@@ -10,6 +11,7 @@ return {
 	"rcarriga/nvim-dap-ui",
 	"williamboman/mason.nvim",
 	"theHamsta/nvim-dap-virtual-text",
+	"rcarriga/nvim-notify",
 	"folke/noice.nvim",
 	"kevinhwang91/nvim-ufo",
 	"dgagn/diagflow.nvim",
