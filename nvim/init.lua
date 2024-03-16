@@ -48,6 +48,7 @@ require("lazy").setup({
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
 	{ import = "sahil.plugins" },
+	{ import = "plugins" },
 	{
 		"j-hui/fidget.nvim",
 		opts = {
