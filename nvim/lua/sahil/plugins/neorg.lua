@@ -10,7 +10,9 @@ return {
 					config = {
 						workspaces = {
 							work = "~/notes/work",
-							journal = "~/docs/vimwiki",
+							journal = "~/journal",
+							resume = "~/work",
+							config = "~/.config",
 							AceroleGameJam = "~/AcerolaGameJam1/",
 						},
 					},

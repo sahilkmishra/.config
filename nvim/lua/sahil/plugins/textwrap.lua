@@ -11,6 +11,7 @@ return {
 				"rst",
 				"tex",
 				"text",
+				"norg",
 			},
 		},
 		config = function()

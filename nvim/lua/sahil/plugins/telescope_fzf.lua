@@ -4,13 +4,17 @@ return {
 		tag = "0.1.5",
 		-- or                              , branch = '0.1.x',
 		dependencies = { "nvim-lua/plenary.nvim" },
+		config = function() end,
 	},
+	"nvim-telescope/telescope-file-browser.nvim",
+	"nvim-telescope/telescope-project.nvim",
 	{
 		"ibhagwan/fzf-lua",
 		-- optional for icon support
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
 			-- calling `setup` is optional for customization
+			require("telescope").load_extension("project")
 			require("fzf-lua").setup({})
 		end,
 		init = function()
