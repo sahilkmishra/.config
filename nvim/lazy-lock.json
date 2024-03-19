@@ -38,6 +38,7 @@
   "neogit": { "branch": "master", "commit": "bc6aca9242bdcf61ea8aa4355e24f7bffb2aa8f3" },
   "neorg": { "branch": "main", "commit": "086891d396ac9fccd91faf1520f563b6eb9eb942" },
   "neorg-jupyter": { "branch": "main", "commit": "53a5ed89dc6778daa7001113c69cf93b7e05b272" },
+  "neorg-telescope": { "branch": "main", "commit": "418f8fd4bd7360d954613a2322b4eb2888ac3ad9" },
   "noice.nvim": { "branch": "main", "commit": "bf67d70bd7265d075191e7812d8eb42b9791f737" },
   "nui.nvim": { "branch": "main", "commit": "3dc46d725f7b94bee5117c0a699b57b1902b5d65" },
   "nvim-cmp": { "branch": "main", "commit": "04e0ca376d6abdbfc8b52180f8ea236cbfddf782" },

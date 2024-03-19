@@ -157,7 +157,6 @@ require("lazy").setup({
 
 vim.api.nvim_set_keymap("n", "<Leader>t", ":terminal<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>n", ":Neorg", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<Leader>nw", ":Neorg workspace", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>nj", ":Neorg journal", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>njt", ":Neorg journal today<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>np", ":Telescope neovim-project discover<CR>", { noremap = true, silent = true })
