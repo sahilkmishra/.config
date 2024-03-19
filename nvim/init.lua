@@ -112,6 +112,10 @@ require("lazy").setup({
 			})
 		end,
 	},
+	"tpope/vim-dadbod",
+	"kristijanhusak/vim-dadbod-ui",
+	"kristijanhusak/vim-dadbod-completion",
+	"tpope/vim-eunuch",
 	{
 		"mrcjkb/rustaceanvim",
 		version = "^4", -- Recommended
@@ -157,6 +161,7 @@ vim.api.nvim_set_keymap("n", "<Leader>nw", ":Neorg workspace", { noremap = true,
 vim.api.nvim_set_keymap("n", "<Leader>nj", ":Neorg journal", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>njt", ":Neorg journal today<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>np", ":Telescope neovim-project discover<CR>", { noremap = true, silent = true })
+
 vim.o.autochdir = true
 
 vim.cmd.colorscheme("lunaperche")
