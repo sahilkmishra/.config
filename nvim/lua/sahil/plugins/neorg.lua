@@ -42,6 +42,12 @@ return {
 				":Telescope neorg switch_workspace<CR>",
 				{ noremap = true, silent = true }
 			)
+			vim.api.nvim_set_keymap(
+				"n",
+				"<Leader>nh",
+				":Telescope neorg search_headings<CR>",
+				{ noremap = true, silent = true }
+			)
 		end,
 	},
 }
