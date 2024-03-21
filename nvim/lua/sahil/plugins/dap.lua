@@ -110,8 +110,34 @@ return {
 	},
 	{
 		"folke/noice.nvim",
-		init = function()
-			require("noice").setup()
-		end,
+		opts = {
+			presets = {
+				bottom_search = false,
+				command_palette = false,
+				long_message_to_split = true,
+				inc_rename = true,
+				lsp_doc_border = true,
+			},
+			popupmenu = {
+				backend = "nui", -- backend to use to show regular cmdline completions
+			},
+			routes = {
+				filter = {
+					event = "notify",
+					find = "No information available",
+				},
+				opts = { skip = true },
+			},
+		},
+	},
+	{ "nvim-neotest/nvim-nio" },
+	{
+		"stevearc/dressing.nvim",
+		opts = {
+			input = {
+				-- When true, <Esc> will close the modal - Defaults to true
+				insert_only = false,
+			},
+		},
 	},
 }
