@@ -24,7 +24,12 @@ return {
 							},
 						},
 					},
-					["core.concealer"] = {},
+					["core.concealer"] = {
+						config = {
+							folds = true,
+							icon_preset = "basic",
+						},
+					},
 					["core.summary"] = {},
 					["external.jupyter"] = {},
 					["core.integrations.telescope"] = {},
