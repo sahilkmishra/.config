@@ -4,7 +4,6 @@ vim.g.have_nerd_font = true
 vim.opt.number = true
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
-
 -- Don't show the mode, since it's already in status line
 vim.opt.showmode = false
 
@@ -106,6 +105,7 @@ require("lazy").setup({
 					"norg",
 					"norg-meta",
 				},
+				auto_install = true,
 				sync_install = false,
 				highlight = { enable = true },
 				indent = { enable = true },

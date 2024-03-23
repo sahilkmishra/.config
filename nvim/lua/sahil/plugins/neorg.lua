@@ -16,6 +16,7 @@ return {
 								config = "~/.config",
 								AceroleGameJam = "~/AcerolaGameJam1/",
 								nodeIdu = "~/Projects/nodeidu/",
+								pictochat = "~/Projects/pictochat/",
 								musicsharer = "~/Projects/music-sharer/",
 								personalWebsite = "~/Projects/sahilmishra.github.io/",
 								gohtmx = "~/Projects/gohtmx/",
