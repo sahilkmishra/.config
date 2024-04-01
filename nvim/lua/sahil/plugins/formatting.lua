@@ -21,19 +21,21 @@ return {
 			-- Conform will run multiple formatters sequentially
 			python = { "isort", "black" },
 			-- Use a sub-list to run only the first available formatter
-			javascript = { { "prettierd", "prettier" } },
+			javascript = { { "biome", "prettierd", "prettier" } },
+			typescript = { { "biome", "prettierd", "prettier" } },
+			json = { "biome" },
 			markdown = { { "prettierd", "prettier" } },
 			css = { { "prettierd", "prettier" } },
 			html = { { "htmlbeautifier", "prettier" } },
-			markdown = { { "prettierd", "prettier" } },
 			rust = { "rustfmt" },
-		},
-		-- Set up format-on-save
-		format_on_save = { timeout_ms = 500, lsp_fallback = true },
-		-- Customize formatters
-		formatters = {
-			shfmt = {
-				prepend_args = { "-i", "2" },
+			go = { "gofumpt", "goimports", "goimports-reviser", "golines" },
+			gd = { "gdtoolkit" },
+			format_on_save = { timeout_ms = 500, lsp_fallback = true },
+			-- Customize formatters
+			formatters = {
+				shfmt = {
+					prepend_args = { "-i", "2" },
+				},
 			},
 		},
 	},
