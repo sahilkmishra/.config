@@ -19,7 +19,6 @@ return {
 			pattern = "*",
 			callback = function()
 				vim.cmd("CHADopen")
-				vim.cmd("COQnow")
 			end,
 		})
 
