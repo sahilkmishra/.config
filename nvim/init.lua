@@ -8,7 +8,7 @@ vim.opt.conceallevel = 2
 vim.opt.mouse = "a"
 -- Don't show the mode, since it's already in status line
 vim.opt.showmode = false
-vim.g.termguicolors = true
+vim.opt.termguicolors = true
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
