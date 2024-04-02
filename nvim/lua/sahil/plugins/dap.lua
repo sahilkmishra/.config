@@ -48,11 +48,6 @@ return {
 					cwd = "${workspaceFolder}",
 				},
 			}
-			dap.adapters.go = {
-				type = "executable",
-				command = "node",
-				args = { os.getenv("HOME") .. "/dev/golang/vscode-go/dist/debugAdapter.js" },
-			}
 			dap.configurations.go = {
 				{
 					type = "go",
