@@ -3,7 +3,6 @@ return {
 	"ms-jpq/chadtree",
 	"amrbashir/nvim-docs-view",
 	"neovim/nvim-lspconfig",
-	"github/copilot.vim",
 	"rust-lang/rust.vim",
 	"kevinhwang91/nvim-ufo",
 	{

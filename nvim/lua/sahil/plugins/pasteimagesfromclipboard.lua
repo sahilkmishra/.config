@@ -16,6 +16,13 @@ return {
 					download_images = false,
 				},
 			},
+			norg = {
+				url_encode_path = false,
+				template = ".image $FILE_PATH",
+				drag_and_drop = {
+					download_images = true,
+				},
+			},
 		},
 	},
 	keys = {
