@@ -162,6 +162,7 @@ vim.api.nvim_set_keymap("n", "<Leader>n", ":Neorg", { noremap = true, silent = t
 vim.api.nvim_set_keymap("n", "<Leader>nj", ":Neorg journal", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>njt", ":Neorg journal today<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>np", ":Telescope neovim-project discover<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Leader>j", "<C-w>", { noremap = true, silent = true })
 
 vim.o.autochdir = true
 
