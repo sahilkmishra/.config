@@ -29,7 +29,14 @@ return {
 				css = { { "prettierd", "prettier" } },
 				html = { { "htmlbeautifier", "prettier" } },
 				rust = { "rustfmt" },
-				go = { "gofumpt", "goimports", "goimports-reviser", "golines" },
+				go = {
+					"gofumpt",
+					"goimports",
+					"goimports-reviser",
+					"golines",
+					"gomodifytags",
+					"gotests",
+				},
 				gd = { "gdtoolkit" },
 				c = { "ast-grep" },
 				cpp = { "ast-grep" },
@@ -60,14 +67,14 @@ return {
 
 					-- You can call `try_lint` with a linter name or a list of names to always
 					-- run specific linters, independent of the `linters_by_ft` configuration
-					require("lint").try_lint("cspell")
+					-- require("lint").try_lint("cspell")
 				end,
 			})
 		end,
 		config = function()
 			local lint = require("lint")
 			lint.linters_by_ft = {
-				markdown = { "vale", "write_good", "woke" },
+				markdown = { "vale", "write_good", "woke", "cspell" },
 				norg = { "write_good", "woke", "cspell" },
 				cpp = {
 					"cpplint",
@@ -78,6 +85,14 @@ return {
 				rust = {},
 				lua = {},
 				html = {},
+				go = {
+					--	"golangci-lint",
+					"nilaway",
+					"revive",
+					"semgrep",
+					"snyk",
+					"staticcheck",
+				},
 				docker = {
 					"dockerfile-language-server",
 					"docker-compose-language-service",
