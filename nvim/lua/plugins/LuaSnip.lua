@@ -9,12 +9,28 @@
 -- the configuration below.
 
 return {
+
+	-- Installation
+	{ "L3MON4D3/LuaSnip" },
+	{ "ms-jpq/coq.artifacts" },
+	{ "ms-jpq/coq.thirdparty" },
 	{
-		"L3MON4D3/LuaSnip",
-		-- follow latest release.
-		version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-		-- install jsregexp (optional!).
-		build = "make install_jsregexp",
-		init = function() end,
+
+		"ms-jpq/coq_nvim",
+		config = function()
+			vim.g.coq_settings = {
+				keymap = {
+					jump_to_mark = "", -- no jump_to_mark mapping
+				},
+				clients = {
+					snippets = { enabled = false }, -- disable coq snippets
+				},
+			}
+		end,
+		init = function()
+			vim.api.nvim_set_keymap("n", "<Leader>c", ":COQnow<CR>", { noremap = true, silent = true })
+		end,
 	},
+
+	{ "mendes-davi/coq_luasnip" },
 }

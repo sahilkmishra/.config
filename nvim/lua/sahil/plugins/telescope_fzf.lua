@@ -15,6 +15,7 @@ return {
 		config = function()
 			-- calling `setup` is optional for customization
 			require("telescope").load_extension("project")
+			require("telescope").load_extension("tmux")
 			require("fzf-lua").setup({})
 		end,
 		init = function()
@@ -29,6 +30,22 @@ return {
 			vim.api.nvim_set_keymap("n", "<Leader>fr", ":FzfLua resume<CR>", { noremap = true, silent = true })
 			vim.api.nvim_set_keymap("n", "<Leader>ff", ":FzfLua builtin<CR>", { noremap = false, silent = true })
 			vim.api.nvim_set_keymap("n", "<Leader>w", "<C-w>", { noremap = false, silent = true })
+			vim.api.nvim_set_keymap(
+				"n",
+				"<Leader>at",
+				":Telescope tmux sessions<CR>",
+				{ noremap = false, silent = true }
+			)
+		end,
+	},
+	{
+		"norcalli/nvim-terminal.lua",
+	},
+	{
+		"camgraff/telescope-tmux.nvim",
+
+		config = function()
+			-- calling `setup` is optional for customization
 		end,
 	},
 }
