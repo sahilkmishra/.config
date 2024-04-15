@@ -36,6 +36,7 @@ return {
 				":Telescope tmux sessions<CR>",
 				{ noremap = false, silent = true }
 			)
+			vim.api.nvim_set_keymap("n", "<Leader>al", ":Telescope live_grep<CR>", { noremap = true, silent = true })
 		end,
 	},
 	{
