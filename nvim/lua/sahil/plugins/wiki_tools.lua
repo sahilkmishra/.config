@@ -1,3 +1,0 @@
-return {
-	"ratfactor/vviki",
-}
