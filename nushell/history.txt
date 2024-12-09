@@ -1,2 +1,404 @@
 oh
 exit
+ls
+exit
+ls
+ytdml
+import 
+history import
+ln -s /home/user/.bash_history /home/user/.local/share/nu/history.txt
+ln -s /home/user/.bash_history /home/civic/.local/share/nu/history.txt
+ln -s /home/civic/.bash_history /home/civic/.local/share/nu/history.txtc
+ytmdl --url 'https://www.youtube.com/watch?v=2HmdrP4G7oE'
+ytdml --help
+ytmdl --help
+q
+ytmdl -o ~/Music/
+ytmdl -o ~/Music/ --url 
+ytmdl -o ~/Music/ --url 'https://www.youtube.com/watch?v=2HmdrP4G7oE'
+ytmdl -o ~/Music/ --url 'https://www.youtube.com/watch?v=WfI7VSXot3Y'
+wget
+http https://www.rickowens.eu/en/US/men/section/new-arrivals
+man http
+http
+http -h
+http get https://www.rickowens.eu/en/US/men/section/new-arrivals
+http get 'https://cdn.rickowens.eu/products/169328/large/CM01D0469_CHNYS_18_08.jpg?1710492527'
+oh
+exit
+cd clothes/rick/
+ls
+rm *.html
+ls
+doom run
+doom sync
+soo
+doom runm
+doom rumn
+doom rum
+ls
+man
+man http
+htpp get --help
+http get -h
+http get --headers [User-Agent Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36] https://www.rickowens.eu/en/US/men/section/new-arrivals
+http get --headers [User-Agent 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'] https://www.rickowens.eu/en/US/men/section/new-arrivals
+curl 'https://cdn.rickowens.eu/products/179483/large/MU02D1A01_M4424_41_10.jpg?1721035021' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0' -H 'Accept: image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br, zstd' -H 'DNT: 1' -H 'Alt-Used: cdn.rickowens.eu' -H 'Connection: keep-alive' -H 'Referer: https://www.rickowens.eu/' -H 'Cookie: _hs_session_v5=bEYzUDBmdmhOemhOWk8zTjQwUXc5cjQyb0VOQko2R0dTV280TlMvdjI0Z0tkNUdFOTk5akUyR0RrSS9ic2Nibm9uUjd4RzlOT01NTjZSby9ZbkxxZEE9PS0tNStlR2ZZVDZkd1RCZ0VOU2hOajM2dz09--f6fc2bdb04880c5ba33f8992d945bbc8ac8622c7; guest_token=IkVfS1hyR1puYmFNUDVJb194ZlhPWHci--10991d9b5b22db120262aa28dd6d874677fb0981; _gcl_au=1.1.941988489.1731112592; _ga_82Z4PQVR7E=GS1.1.1731112591.1.1.1731113303.58.0.198646515; _ga=GA1.1.955591331.1731112592; cf_clearance=NVsj5QGOscxpzw0RtCq.mlx.pSL5E__Qqiu6z2X459A-1731112985-1.2.1.1-zfgsiouiyV61BUsoeESCJ5x0FGAOFzapWtDd.MswJxJyAxRl6m4wnUv15TNOjTboylH0CHdMOjmX8YEbpUYLYTFgA.N_5A991YvZ72KrBEGajroPhkm8AW4Fy0T6_DJv9MsYiMWWvq_G19o3uFzO986GN3rcc3KW7h5fRs1diEFdFD21UZIg0KUY.dCohF9OW5fXu3VbmI7wmTqIJFlOnId7RJjvYUwJkfjsSjGwGaq4AsnQKOobC4BFq0V543EMOldxddEew6ypULYVeTh7JcWr8FPtE1elZjxPPbK2wM6Bul7_wbdF7OsdwWJmw4Ux3uOFZLHzbpUPl_3EzHGkmQ' -H 'Sec-Fetch-Dest: image' -H 'Sec-Fetch-Mode: no-cors' -H 'Sec-Fetch-Site: same-site' -H 'Priority: u=5, i' -H 'TE: trailers'
+man curl
+curl 'https://cdn.rickowens.eu/products/179483/large/MU02D1A01_M4424_41_10.jpg?1721035021' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0' -H 'Accept: image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br, zstd' -H 'DNT: 1' -H 'Alt-Used: cdn.rickowens.eu' -H 'Connection: keep-alive' -H 'Referer: https://www.rickowens.eu/' -H 'Cookie: _hs_session_v5=bEYzUDBmdmhOemhOWk8zTjQwUXc5cjQyb0VOQko2R0dTV280TlMvdjI0Z0tkNUdFOTk5akUyR0RrSS9ic2Nibm9uUjd4RzlOT01NTjZSby9ZbkxxZEE9PS0tNStlR2ZZVDZkd1RCZ0VOU2hOajM2dz09--f6fc2bdb04880c5ba33f8992d945bbc8ac8622c7; guest_token=IkVfS1hyR1puYmFNUDVJb194ZlhPWHci--10991d9b5b22db120262aa28dd6d874677fb0981; _gcl_au=1.1.941988489.1731112592; _ga_82Z4PQVR7E=GS1.1.1731112591.1.1.1731113303.58.0.198646515; _ga=GA1.1.955591331.1731112592; cf_clearance=NVsj5QGOscxpzw0RtCq.mlx.pSL5E__Qqiu6z2X459A-1731112985-1.2.1.1-zfgsiouiyV61BUsoeESCJ5x0FGAOFzapWtDd.MswJxJyAxRl6m4wnUv15TNOjTboylH0CHdMOjmX8YEbpUYLYTFgA.N_5A991YvZ72KrBEGajroPhkm8AW4Fy0T6_DJv9MsYiMWWvq_G19o3uFzO986GN3rcc3KW7h5fRs1diEFdFD21UZIg0KUY.dCohF9OW5fXu3VbmI7wmTqIJFlOnId7RJjvYUwJkfjsSjGwGaq4AsnQKOobC4BFq0V543EMOldxddEew6ypULYVeTh7JcWr8FPtE1elZjxPPbK2wM6Bul7_wbdF7OsdwWJmw4Ux3uOFZLHzbpUPl_3EzHGkmQ' -H 'Sec-Fetch-Dest: image' -H 'Sec-Fetch-Mode: no-cors' -H 'Sec-Fetch-Site: same-site' -H 'Priority: u=5, i' -H 'TE: trailers' test.jpeg
+man curl
+curl 'https://cdn.rickowens.eu/products/179483/large/MU02D1A01_M4424_41_10.jpg?1721035021' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0' -H 'Accept: image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br, zstd' -H 'DNT: 1' -H 'Alt-Used: cdn.rickowens.eu' -H 'Connection: keep-alive' -H 'Referer: https://www.rickowens.eu/' -H 'Cookie: _hs_session_v5=bEYzUDBmdmhOemhOWk8zTjQwUXc5cjQyb0VOQko2R0dTV280TlMvdjI0Z0tkNUdFOTk5akUyR0RrSS9ic2Nibm9uUjd4RzlOT01NTjZSby9ZbkxxZEE9PS0tNStlR2ZZVDZkd1RCZ0VOU2hOajM2dz09--f6fc2bdb04880c5ba33f8992d945bbc8ac8622c7; guest_token=IkVfS1hyR1puYmFNUDVJb194ZlhPWHci--10991d9b5b22db120262aa28dd6d874677fb0981; _gcl_au=1.1.941988489.1731112592; _ga_82Z4PQVR7E=GS1.1.1731112591.1.1.1731113303.58.0.198646515; _ga=GA1.1.955591331.1731112592; cf_clearance=NVsj5QGOscxpzw0RtCq.mlx.pSL5E__Qqiu6z2X459A-1731112985-1.2.1.1-zfgsiouiyV61BUsoeESCJ5x0FGAOFzapWtDd.MswJxJyAxRl6m4wnUv15TNOjTboylH0CHdMOjmX8YEbpUYLYTFgA.N_5A991YvZ72KrBEGajroPhkm8AW4Fy0T6_DJv9MsYiMWWvq_G19o3uFzO986GN3rcc3KW7h5fRs1diEFdFD21UZIg0KUY.dCohF9OW5fXu3VbmI7wmTqIJFlOnId7RJjvYUwJkfjsSjGwGaq4AsnQKOobC4BFq0V543EMOldxddEew6ypULYVeTh7JcWr8FPtE1elZjxPPbK2wM6Bul7_wbdF7OsdwWJmw4Ux3uOFZLHzbpUPl_3EzHGkmQ' -H 'Sec-Fetch-Dest: image' -H 'Sec-Fetch-Mode: no-cors' -H 'Sec-Fetch-Site: same-site' -H 'Priority: u=5, i' -H 'TE: trailers' -o test.jpeg
+curl 'https://www.rickowens.eu/en/IT/men/section/new-arrivals' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0' -H 'Accept: image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br, zstd' -H 'DNT: 1' -H 'Alt-Used: cdn.rickowens.eu' -H 'Connection: keep-alive' -H 'Referer: https://www.rickowens.eu/' -H 'Cookie: _hs_session_v5=bEYzUDBmdmhOemhOWk8zTjQwUXc5cjQyb0VOQko2R0dTV280TlMvdjI0Z0tkNUdFOTk5akUyR0RrSS9ic2Nibm9uUjd4RzlOT01NTjZSby9ZbkxxZEE9PS0tNStlR2ZZVDZkd1RCZ0VOU2hOajM2dz09--f6fc2bdb04880c5ba33f8992d945bbc8ac8622c7; guest_token=IkVfS1hyR1puYmFNUDVJb194ZlhPWHci--10991d9b5b22db120262aa28dd6d874677fb0981; _gcl_au=1.1.941988489.1731112592; _ga_82Z4PQVR7E=GS1.1.1731112591.1.1.1731113303.58.0.198646515; _ga=GA1.1.955591331.1731112592; cf_clearance=NVsj5QGOscxpzw0RtCq.mlx.pSL5E__Qqiu6z2X459A-1731112985-1.2.1.1-zfgsiouiyV61BUsoeESCJ5x0FGAOFzapWtDd.MswJxJyAxRl6m4wnUv15TNOjTboylH0CHdMOjmX8YEbpUYLYTFgA.N_5A991YvZ72KrBEGajroPhkm8AW4Fy0T6_DJv9MsYiMWWvq_G19o3uFzO986GN3rcc3KW7h5fRs1diEFdFD21UZIg0KUY.dCohF9OW5fXu3VbmI7wmTqIJFlOnId7RJjvYUwJkfjsSjGwGaq4AsnQKOobC4BFq0V543EMOldxddEew6ypULYVeTh7JcWr8FPtE1elZjxPPbK2wM6Bul7_wbdF7OsdwWJmw4Ux3uOFZLHzbpUPl_3EzHGkmQ' -H 'Sec-Fetch-Dest: image' -H 'Sec-Fetch-Mode: no-cors' -H 'Sec-Fetch-Site: same-site' -H 'Priority: u=5, i' -H 'TE: trailers' -o test.html
+nvim test.html
+nh os switch
+exit
+dsnote
+flatpak run --command=sh net.mkiol.SpeechNote 
+cd nixos_config/
+nvim .
+nh os switch
+cd ..
+ls
+cd test/
+mkdir python
+cd python/
+rye init
+sye sync
+rye sync
+ls
+nvim .
+rye 
+rye build
+rye run
+rye run python3
+ls
+rye help
+rye dev
+rye tools
+tye help
+rye help
+rye self
+rye make
+rye build
+ls
+rye build
+rye run
+rye
+rye init --script testing
+rye sync
+rye run
+rye run testing
+rye build
+rye build testing
+rye run testing
+ls testing/src/
+cd testing/
+ls
+rye sync
+ls
+rye run testing
+ls
+y
+uv
+uv -h
+uv help
+uv run
+uv init
+uv run
+uv run testing
+cd .config/google-chrome/Default/
+ls
+fzf
+ls
+fzf
+cd Extensions/
+ls
+cd ../..
+rg .png
+rg rickowens
+man rg
+cd nixos_config/
+ls
+nvim .
+nh os switch
+ig
+ig --help
+ig --editor nvim
+ig rickowens.eu
+rg -uuu rickowens
+rg -uuu rickowens.eu
+man rg
+rg -uuu rickowens.eu
+ig -uuu rickowens.eu
+ig -- -uuu rickowens.eu
+ig -- -u rickowens.eu
+man ig
+ig --help
+nix flake update
+curl -f https://zed.dev/install.sh | sh
+zed
+nix flake lock
+ls
+nix flake lock
+nix flake update
+nh os switch
+rg gnome.
+nh os switch
+rg dotnet
+nh os switch
+nix flake update
+nh os switch
+sudo nix-channel --update
+nix flake update
+nh os switch
+sudo chmod +x zed 
+ls
+~/.local/bin/zed
+sudo nixos-rebuild switch --flake .
+sudo nixos-rebuild switch --flake . --impure
+rg dotnet
+sudo nixos-rebuild switch --flake . --impure
+clear
+ls
+nh os switch
+nixos-rebuild switch --show-trace
+nixos-rebuild switch --show-trace --flake .
+rg famistudio
+nixos-rebuild switch --show-trace --flake .
+rg noto-fonts
+nixos-rebuild switch --show-trace --flake .
+rg nerd
+nixos-rebuild switch --show-trace --flake .
+nh os switch
+rg nerdfonts
+nh os switch
+rg nvidia
+nh os switch
+zeditor B
+ls
+mkdir adventOfCode
+cd adventOfCode/
+mkdir 2024
+cd 2024/
+ls
+zeditor .
+cd sahil/
+ls
+opam
+nh os switch
+opam init
+opam sync
+opam create
+ocaml
+dune
+nix-shell -i dune
+nh os switch
+dune init proj lists
+ls
+cd ..
+cd campbell/
+dune init proj lists
+ls
+zeditor .
+ls ~/.local/share/nvim/mason/bin
+rg path
+nvim
+cd ../sahil/
+nvim .
+cd lists/
+ls
+dune build
+nvim .
+nvim ~/.config/nvim/init.lua
+yazi
+cd `GameDev/kunk bot/`
+ls
+nh os switch
+nvim .config/nushell/config.nu
+grid -i
+nvim .config/nushell/config.nu
+nvim
+nvim .config/nvim/init.lua
+nh os switch
+exit
+ls
+cd GameDev/Apps/pictochat_wifi/
+ls
+cargo nds build
+cargo install --git https://github.com/SeleDreams/cargo-nds.git<\n>
+cargo fix --bin "cargo-nds"
+cargo fix --bin "cargo-nds" --allow-dirty
+cargo nds build
+rustup override set nightly
+cargo nds build
+rustup component add rust-src --toolchain nightly-x86_64-unknown-linux-gnu
+cargo nds build
+ls
+cargo nds run
+clang
+nh os switch
+pacman
+nh os switch
+docker image pull skylyrac/blocksds:slim-latest
+git clone https://github.com/blocksds/sdk<\n>
+ls
+cd sdk
+ls
+git info
+git
+git show
+cleear
+clear
+ls
+docker run --rm -v /path/in/your/pc/sdk/templates/rom_arm9_only:/work \<\n>    -it --entrypoint bash skylyrac/blocksds:slim-latest
+docker run --rm -v ../sdk/templates/rom_arm9_only:/work \<\n>    -it --entrypoint bash skylyrac/blocksds:slim-latest
+docker run --rm -v ../sdk/templates/rom_arm9_only:/work -it --entrypoint bash skylyrac/blocksds:slim-latest
+docker run --rm -v templates/rom_arm9_only:/work -it --entrypoint bash skylyrac/blocksds:slim-latest
+ls templates/rom_arm9_only/
+cd templates/rom_arm9_only/
+pwd
+docker run --rm -v /home/civic/GameDev/Apps/pictochat_wifi/sdk/templates/rom_arm9_only:/work -it --entrypoint bash skylyrac/blocksds:slim-latest
+cd ../..
+cd ..
+ls
+cargo nds build
+nh os switch
+clear
+reboot
+exit
+cargo nds build
+clank
+clang
+nix-shell -E "with import <nixpkgs> {}; pkgs.hello.override{ stdenv = pkgs.clangStdenv; }"<\n>
+nvim ~/.config/nushell/config.nu
+nvim
+clear
+nvim ~/.config/nushell/config.nu
+clear
+exit
+cargo nds build
+nvim nix.shell
+nix-shell
+mv nix.shell shell.nix
+nvim ~/.config/nushell/config.nu
+mv nix.shell shell.nix
+cargo nds build
+pwd
+nh os switch
+ls /sbin
+vbox
+reboot
+sudo reboot
+exit
+rg boot.kernel
+nh os switch
+reboot
+cd nixos_config/
+rg kvm
+nvim hardware-configuration.nix
+nh os switch
+exit
+rg unfree
+nh os switch
+rg kvm
+nh os switch
+rg virtualbox
+reboot
+exit
+rg sync
+nh os switch
+rg virtualbox
+nh os switch
+rebooot
+reeboo
+reboot
+exit
+rg vboxusers
+pwd
+user
+rg users
+rg groups
+rg group
+rg wheel
+rg docker
+nhnh os switch
+nh os switch
+nix flake update
+sudo nix flake update
+nh os switch
+chown civic *
+chown civic * -r
+chwon -h
+man chwon
+man chown
+chown civic * -R
+sudo chown civic * -R
+nh os switch
+rg system76
+nh os switch
+rg mixxx
+nh os switch
+rebooty
+reboot
+exit
+nh os switch
+.ctags-wrapped 
+nh os switch
+.ctags-wrapped 
+nh os switch
+ls
+mkdir limit_theory
+cd limit_theory/
+git clone https://github.com/Limit-Theory-Redux/ltheory.git
+ls
+cargo build
+ls
+rg hmgui
+fzf
+cargo build
+cd .config/
+ls
+cargo install gitui --lockedcargo install gitui --locked
+cargo install gitui --locke
+nvim
+clear
+cargo install gitui --locked
+gitui
+ls
+cd Documents/
+ls
+git clone https://github.com/devkitPro/nds-examples.git
+cd nds-examples/
+ls
+cd dswifi/
+ls
+make
+rg .nds
+fzf
+man fzf
+fzf .ds
+docker pull devkitpro/devkitarm
+docker run --rm -v /home/civic/GameDev/Apps/pictochat_wifi/sdk/templates/rom_arm9_only:/work -it --entrypoint bash skylyrac/blocksds:slim-latest
+docker run --rm -v templates/rom_arm9_only:/work -it --entrypoint bash skylyrac/blocksds:slim-latest
+ls
+cd ..
+cd GameDev/Apps/pictochat_wifi/
+ls
+cd sdk/examples/graphics_3d/
+ls
+cd fog/
+ls
+make
+docker run --rm -v .:/work -it --entrypoint bash skylyrac/blocksds:slim-latest
+ls
+fzf 
+docker run --rm -v .:/work -it --entrypoint bash skylyrac/blocksds:slim-latest
+cd GameDev/Apps/pictochat_wifi/
+ls
+make
+ls
+make
+ls /opt/
+sudo ls /opt
+nvim
+nvim .
