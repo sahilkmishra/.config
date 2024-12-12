@@ -402,3 +402,24 @@ ls /opt/
 sudo ls /opt
 nvim
 nvim .
+chmod +x Cursr.deb
+./Cursr.deb
+echo $env.PATH
+rg $env.path
+rg $PATH
+rg $env.PATH
+rg ...$env.PATH
+sudo rg ...$env.PATH
+ls
+clear
+rg .lua
+rg -e .lua
+rg -e .a -g .lua
+rg -e a -g .lua
+rg -e a -g *.lua
+cd .config/
+cd nvim/
+ls
+fzf
+rg telescope
+nvim init.lua -c 239
