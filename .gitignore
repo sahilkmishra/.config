@@ -101,3 +101,4 @@ xremap/config.yml
 xsettingsd/xsettingsd.conf
 zanshin-migratorrc
 zanshinrc
+nvim/doc/tags
