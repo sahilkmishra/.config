@@ -1,0 +1,28 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+1536x864 screen: XPosition=0
+1536x864 screen: YPosition=253
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAQAAAAAAAADIAAAB9/wCAAAAAfsAAAAcAG8AawB1AGwAYQByAF8AcwBpAGQAZQBiAGEAcgEAAABJAAAB9wAAAQMBAAACAAADHwAAAfcAAAAEAAAABAAAAAgAAAAI/AAAAAMAAAABAAAAAQAAACwAcQB1AGkAYwBrAEEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgIAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+
+[Recent Files]
+File1[$e]=$HOME/Blog/work/SahilMishraResume.pdf
+File2[$e]=$HOME/Documents/GitHub/sahilmishra.github.io/_posts/2024-02-13-How this website is maintained.md
+File3[$e]=$HOME/Documents/GitHub/personal_website/about.md
+File4[$e]=$HOME/Documents/GitHub/personal_website/blog.md
+File5[$e]=$HOME/Blog/index.pdf
+File6[$e]=$HOME/Blog/life/Untitled.sync-conflict-20240929-200240-I36A2WO.md
+Name1[$e]=SahilMishraResume.pdf
+Name2[$e]=2024-02-13-How this website is maintained.md
+Name3[$e]=about.md
+Name4[$e]=blog.md
+Name5[$e]=index.pdf
+Name6[$e]=Untitled.sync-conflict-20240929-200240-I36A2WO.md

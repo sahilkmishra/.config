@@ -1,0 +1,12 @@
+[MainWindow]
+1536x864 screen: Height=573
+1536x864 screen: Width=611
+1536x864 screen: XPosition=462
+1536x864 screen: YPosition=139
+State=AAAA/wAAAAD9AAAAAAAAAmMAAAIiAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+
+[WalletEditor]
+AlwaysShowContents=false
+SplitterSize=269,315

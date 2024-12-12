@@ -1,0 +1,19 @@
+[HTML Settings]
+AutomaticDetectionLanguage=1
+
+[MainWindow]
+1536x864 screen: XPosition=368
+1536x864 screen: YPosition=129
+1920x1080 screen: Height=495
+1920x1080 screen: Width=986
+1920x1080 screen: XPosition=611
+1920x1080 screen: YPosition=319
+State=AAAA/wAAAAD9AAAAAAAAAyAAAAH7AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+
+[MainWindowState]
+Splitter=243,556
+
+[Search]
+ScopeSelection=0

@@ -1,0 +1,7 @@
+[General]
+Index=blog
+
+[blog]
+Port=9001
+Type=WebFolder
+URL=webdav://192.168.1.163:9001/home/sahilm/Blog
