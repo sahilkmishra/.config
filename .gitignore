@@ -102,3 +102,4 @@ xsettingsd/xsettingsd.conf
 zanshin-migratorrc
 zanshinrc
 nvim/doc/tags
+nvim/lazy-lock.json

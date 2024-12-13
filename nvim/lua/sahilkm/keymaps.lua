@@ -12,6 +12,11 @@ M.setup = function()
   vim.keymap.set('n', '<leader>tr', function()
     vim.opt.relativenumber = not vim.opt.rnu
   end, { desc = '[T]oggle [R]elative Line Numbers' })
+
+  -- [B]uffer
+
+  vim.keymap.set('n', '<leader>bp', '<cmd>bprev<CR>', { desc = '[B]uffer [P]revious' })
+  vim.keymap.set('n', '<leader>bn', '<cmd>bnext<CR>', { desc = '[B]uffer [N]ext' })
 end
 
 return M
