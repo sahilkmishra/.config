@@ -103,3 +103,6 @@ zanshin-migratorrc
 zanshinrc
 nvim/doc/tags
 nvim/lazy-lock.json
+/raycast
+/raycast
+nvim/lazy-lock.json
