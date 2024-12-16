@@ -14,10 +14,13 @@ M.setup = function()
     vim.cmd.vnew()
     vim.cmd.terminal()
     vim.cmd.wincmd 'J'
-    vim.api.nvim_win_set_height(0, 15)
+    vim.api.nvim_win_set_height(0, 5)
   end, { desc = '[E]dit [T]erminal' })
 
   -- [S]earch
+  vim.keymap.set('n', '<leader>sN', function()
+    require('telescope.builtin').find_files { cwd = '~/nixos_config/' }
+  end, { desc = '[S]earch [N]ix Config' })
 
   -- [T]oggle
   vim.keymap.set('n', '<leader>tr', function()
