@@ -537,6 +537,7 @@ require('lazy').setup({
       --  - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
+      --
       local servers = {
         -- clangd = {},
         -- gopls = {},
@@ -583,9 +584,6 @@ require('lazy').setup({
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
-      -- add nixd to servers that dont need to be installed
-      -- servers = vim.tbl_extend('force', servers, { nixd = {}, })
-
       require('mason-lspconfig').setup {
         handlers = {
           function(server_name)
@@ -599,6 +597,7 @@ require('lazy').setup({
         },
       }
 
+      -- No need for mason install, already in nixOS install
       require('lspconfig').nil_ls.setup {}
       require('lspconfig').nixd.setup {}
     end,
@@ -744,8 +743,8 @@ require('lazy').setup({
           --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
         },
         sources = {
-          { name = 'nvim_lsp' },
           { name = 'luasnip' },
+          { name = 'nvim_lsp' },
           { name = 'path' },
         },
       }
