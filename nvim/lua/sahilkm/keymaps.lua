@@ -6,9 +6,16 @@ M.setup = function()
   vim.keymap.set('n', '<M-j>', '<cmd>cprevious<CR>', { desc = 'Qui[c]k fix Previous' })
 
   vim.keymap.set('n', ';', '<cmd>Telescope commands<CR>', { desc = 'Search Commands' })
+
   -- [E]dit
   vim.keymap.set('n', '<leader>ee', '<cmd>Oil<CR>', { desc = '[E]xplore' })
   vim.keymap.set('n', '<leader>eg', '<cmd>Neogit<CR>', { desc = '[E]dit [G]it' })
+  vim.keymap.set('n', '<leader>et', function()
+    vim.cmd.vnew()
+    vim.cmd.terminal()
+    vim.cmd.wincmd 'J'
+    vim.api.nvim_win_set_height(0, 15)
+  end, { desc = '[E]dit [T]erminal' })
 
   -- [S]earch
 
