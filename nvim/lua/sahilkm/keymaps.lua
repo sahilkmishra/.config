@@ -1,6 +1,10 @@
 local M = {}
 
 M.setup = function()
+  -- Quick Fix
+  vim.keymap.set('n', '<M-k>', '<cmd>cNext<CR>', { desc = 'Qui[c]k fix Next' })
+  vim.keymap.set('n', '<M-j>', '<cmd>cprevious<CR>', { desc = 'Qui[c]k fix Previous' })
+
   vim.keymap.set('n', ';', '<cmd>Telescope commands<CR>', { desc = 'Search Commands' })
   -- [E]dit
   vim.keymap.set('n', '<leader>ee', '<cmd>Oil<CR>', { desc = '[E]xplore' })

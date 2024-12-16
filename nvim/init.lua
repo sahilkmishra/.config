@@ -582,6 +582,9 @@ require('lazy').setup({
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
+      -- add nixd to servers that dont need to be installed
+      -- servers = vim.tbl_extend('force', servers, { nixd = {}, })
+
       require('mason-lspconfig').setup {
         handlers = {
           function(server_name)
@@ -594,6 +597,8 @@ require('lazy').setup({
           end,
         },
       }
+
+      require('lspconfig').nixd.setup {}
     end,
   },
 
