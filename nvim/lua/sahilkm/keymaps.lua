@@ -22,6 +22,10 @@ M.setup = function()
     require('telescope.builtin').find_files { cwd = '~/nixos_config/' }
   end, { desc = '[S]earch [N]ix Config' })
 
+  vim.keymap.set('n', '<leader>sm', function()
+    require('telescope.builtin').man_pages {}
+  end, { desc = '[S]earch [m]an Pages' })
+
   -- [T]oggle
   vim.keymap.set('n', '<leader>tr', function()
     vim.opt.relativenumber = not vim.opt.rnu
