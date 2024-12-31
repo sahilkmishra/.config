@@ -1,3 +1,4 @@
+```
      dBPdBPdBP dBBBP  dBP    dBBBP  dBBBBP dBBBBBBb  dBBBP 
                                    dBP.BP       dBP        
    dBPdBPdBP dBBP   dBP    dBP    dBP.BP dBPdBPdBP dBBP    
@@ -16,6 +17,7 @@
   dBP    dBP.BP dBP dBP dBP    dBP dB' BB      dBP         
  dBBBBP dBBBBP dBP dBP dBP    dBP dBBBBBB dBBBBP'          
 
+```
 # About
 Here are my configs, mostly nvim, alacritty, kitty and nu
 
