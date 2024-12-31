@@ -889,3 +889,8 @@ $env.config = {
         }
     ]
 }
+
+# NOTE: Aliases for nushell are here
+alias n = nvim
+alias e = nvim
+alias a = nvim
