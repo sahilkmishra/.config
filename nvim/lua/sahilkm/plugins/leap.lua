@@ -1,11 +1,15 @@
 return {
   {
-    'ggandor/leap.nvim',
+    'smoka7/hop.nvim',
+    version = '*',
+    opts = {
+      keys = 'etovxqpdygfblzhckisuran',
+    },
     config = function()
-      require('leap').create_default_mappings()
-
-      vim.keymap.set('n', '<leader><leader>', '<Plug>(leap-forward)', { desc = 'Leap' })
-      vim.keymap.set('n', '<S-leader><S-leader>', '<Plug>(leap-backward)', { desc = 'Leap' })
+      require('hop').setup { keys = 'etovxqpdygfblzhckisuran' }
+      vim.keymap.set('n', '<leader><leader>', '<cmd>HopWord<CR>', { desc = 'Hop Word' })
+      vim.keymap.set('v', '<leader><leader>', '<cmd>HopWord<CR>', { desc = 'Hop Word' })
+      --vim.keymap.set('n', '<S-leader><S-leader>', '<Plug>(leap-backward)', { desc = 'Leap' })
     end,
   },
 }

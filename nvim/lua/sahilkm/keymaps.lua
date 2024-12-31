@@ -26,6 +26,8 @@ M.setup = function()
     require('telescope.builtin').man_pages {}
   end, { desc = '[S]earch [m]an Pages' })
 
+  vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope keywords=TODO,FIX<CR>', { desc = '[S]earch [T]odos' })
+
   -- [T]oggle
   vim.keymap.set('n', '<leader>tr', function()
     vim.opt.relativenumber = not vim.opt.rnu
