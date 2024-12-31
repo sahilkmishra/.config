@@ -5,7 +5,16 @@ return {
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
-    dashboard = { enabled = true },
+    dashboard = {
+      sections = {
+        { section = 'header' },
+        { section = 'keys', gap = 0, padding = 2 },
+        { icon = ' ', title = 'Recent Files', section = 'recent_files', indent = 2, padding = 2 },
+        { icon = ' ', title = 'Projects', section = 'projects', indent = 2, padding = 2 },
+        { section = 'startup' },
+      },
+    },
+
     indent = { enabled = true },
     input = { enabled = true },
     notifier = {

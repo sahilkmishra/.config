@@ -1,0 +1,7 @@
+[font]
+size = 13.0
+
+[font.normal]
+# NOTE: hilarious this is 'Literation' and not Liberation
+family = "LiterationMono Nerd Font Mono"
+style = "Regular"
