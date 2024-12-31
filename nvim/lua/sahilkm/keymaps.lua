@@ -22,6 +22,8 @@ M.setup = function()
     require('telescope.builtin').find_files { cwd = '~/nixos_config/' }
   end, { desc = '[S]earch [N]ix Config' })
 
+  vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope keywords=TODO,FIX<CR>', { desc = '[S]earch [T]odos' })
+
   -- [T]oggle
   vim.keymap.set('n', '<leader>tr', function()
     vim.opt.relativenumber = not vim.opt.rnu
