@@ -86,5 +86,16 @@ return {
 
     -- Install golang specific config
     require('dap-go').setup()
+
+    dap.adapters.godot = {
+      type = 'server',
+      host = '127.0.0.1',
+      port = 6006,
+    }
+    dap.adapters.codelldb = {
+      type = 'server',
+      host = '127.0.0.1',
+      port = 13000,
+    }
   end,
 }
