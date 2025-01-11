@@ -7,7 +7,7 @@ M.setup = function()
 
   vim.keymap.set('n', ';', '<cmd>Telescope commands<CR>', { desc = 'Search Commands' })
 
-  -- [E]nter
+  -- [E]nter Rationale, this looks at other programs, not nvim
   vim.keymap.set('n', '<leader>ee', '<cmd>Oil<CR>', { desc = '[E]nter [E]xplore' })
   vim.keymap.set('n', '<leader>eg', '<cmd>Neogit<CR>', { desc = '[E]nter [G]it' })
   vim.keymap.set('n', '<leader>et', function()
@@ -16,6 +16,7 @@ M.setup = function()
     vim.cmd.wincmd 'J'
     vim.api.nvim_win_set_height(0, 5)
   end, { desc = '[E]nter [T]erminal' })
+  vim.keymap.set('n', '<leader>eb', '<cmd>BrowserBookmarks<CR>', { desc = '[E]nter [B]ookmarks' })
 
   -- [S]earch
   vim.keymap.set('n', '<leader>sN', function()

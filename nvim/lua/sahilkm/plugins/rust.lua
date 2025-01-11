@@ -2,27 +2,10 @@ return {
   {
     'saecki/crates.nvim',
     tag = 'stable',
+    event = { 'BufRead Cargo.toml' },
     config = function()
       -- Lazy load add crates to cmp
-      local cmp = require 'cmp'
-      vim.api.nvim_create_autocmd('BufRead', {
-        group = vim.api.nvim_create_augroup('CmpSourceCargo', { clear = true }),
-        pattern = 'Cargo.toml',
-        callback = function()
-          cmp.setup.buffer { sources = { { name = 'crates' } } }
-
-          require('crates.completion.cmp').setup()
-        end,
-      })
-      require('crates').setup {
-        src = {
-          completion = {
-            cmp = {
-              enabled = true,
-            },
-          },
-        },
-      }
+      require('crates').setup { completion = { cmp = { enabled = true } } }
     end,
   },
   {
