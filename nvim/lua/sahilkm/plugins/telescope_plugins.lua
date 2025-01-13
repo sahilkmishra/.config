@@ -5,7 +5,7 @@ return {
     -- Only required to override the default options
     opts = {
       -- Override default configuration values
-      selected_browser = 'chrome',
+      selected_browser = 'firefox',
       url_open_command = 'xdg-open',
     },
     dependencies = {
