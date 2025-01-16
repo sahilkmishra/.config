@@ -6,11 +6,12 @@ return {
     opts = {
       -- Override default configuration values
       selected_browser = 'firefox',
-      url_open_command = 'xdg-open',
+      url_open_command = 'open',
+      profile_name = 'default-release',
     },
     dependencies = {
       --   -- Only if your selected browser is Firefox, Waterfox or buku
-      --   'kkharji/sqlite.lua',
+      'kkharji/sqlite.lua',
       --
       --   -- Only if you're using the Telescope extension
       'nvim-telescope/telescope.nvim',
