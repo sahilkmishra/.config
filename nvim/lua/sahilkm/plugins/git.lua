@@ -8,8 +8,11 @@ return {
       -- Only one of these is needed.
       'nvim-telescope/telescope.nvim', -- optional
       'ibhagwan/fzf-lua', -- optional
-      'echasnovski/mini.pick', -- optional
+      --'echasnovski/mini.pick', -- optional
     },
     config = true,
+  },
+  {
+    'sindrets/diffview.nvim',
   },
 }
