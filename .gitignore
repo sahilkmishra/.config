@@ -111,3 +111,9 @@ nvim/lazy-lock.json
 plasma-org.kde.plasma.desktop-appletsrc
 plasmarc
 nvim/lazy-lock.json
+/Google
+/unity3d
+/configstore
+/wally
+/lazygit
+*.sqlite3
