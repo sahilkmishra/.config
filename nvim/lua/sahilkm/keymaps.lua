@@ -10,6 +10,7 @@ M.setup = function()
   -- [E]nter Rationale, this looks at other programs, not nvim
   vim.keymap.set('n', '<leader>ee', '<cmd>Oil<CR>', { desc = '[E]nter [E]xplore' })
   vim.keymap.set('n', '<leader>eg', '<cmd>Neogit<CR>', { desc = '[E]nter [G]it' })
+  vim.keymap.set('n', '<leader>ed', '<cmd>DapNew<CR>', { desc = '[E]nter [D]ebug' })
   vim.keymap.set('n', '<leader>et', function()
     vim.cmd.vnew()
     vim.cmd.terminal()
