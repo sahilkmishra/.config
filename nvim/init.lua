@@ -340,6 +340,7 @@ require('lazy').setup({
       require('telescope').load_extension 'projects'
 
       require('telescope').load_extension 'ssh-config'
+      require('telescope').load_extension 'manix'
 
       vim.keymap.set({ 'n', 'v' }, '<leader>sv', '<cmd>Telescope ssh-config<CR>', { desc = '[S]earch Ser[v]er' })
       -- See `:help telescope.builtin`
