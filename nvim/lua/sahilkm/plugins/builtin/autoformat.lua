@@ -1,4 +1,5 @@
 return {
+
   { -- Autoformat
     'stevearc/conform.nvim',
     lazy = false,
@@ -25,7 +26,7 @@ return {
         }
       end,
       formatters_by_ft = {
-        lua = { 'stylua' },
+        lua = { 'stylua', 'luaformatter' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
