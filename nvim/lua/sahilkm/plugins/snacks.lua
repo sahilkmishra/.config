@@ -9,8 +9,8 @@ return {
       sections = {
         { section = 'header' },
         { section = 'keys', gap = 0, padding = 2 },
-        { icon = ' ', title = 'Recent Files', section = 'recent_files', indent = 2, padding = 2 },
-        { icon = ' ', title = 'Projects', section = 'projects', indent = 2, padding = 2, limit = 10 },
+        { icon = ' ', title = 'Recent Files', section = 'recent_files', indent = 2, padding = 2, cwd = true },
+        { icon = ' ', title = 'Projects', section = 'projects', indent = 2, padding = 2, limit = 10, cwd = true },
         { section = 'startup' },
       },
     },
