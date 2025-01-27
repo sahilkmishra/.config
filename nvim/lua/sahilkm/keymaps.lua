@@ -67,8 +67,8 @@ M.setup = function()
   vim.keymap.set('n', '<leader>w+', '<C-w>>', { desc = '[W]indow Increase Height' })
 
   -- Tab navigation like chrome
-  vim.keymap.set('n', '<C-H>', '<cmd>tabprevious', { desc = 'Tab Left' })
-  vim.keymap.set('n', '<C-L>', '<cmd>tabNext', { desc = 'Tab Right' })
+  vim.keymap.set('n', '<C-S-H>', '<cmd>tabprevious<CR>', { desc = 'Tab Left' })
+  vim.keymap.set('n', '<C-S-L>', '<cmd>tabNext<CR>', { desc = 'Tab Right' })
 end
 
 return M
