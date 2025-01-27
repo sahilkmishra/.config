@@ -119,6 +119,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+local autocmd_dir = vim.fn.stdpath 'config' .. '/lua/sahilkm/autocmds'
+for _, file in ipairs(vim.fn.readdir(autocmd_dir, [[v:val =~ '\.lua$']])) do
+  require('sahilkm/autocmds/' .. file:gsub('%.lua$', ''))
+end
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
