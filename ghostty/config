@@ -1,3 +1,7 @@
 font-family=LiterationMono Nerd Font Mono
 font-size=13
 background=#000000
+window-titlebar-background=#000000
+background-opacity=0.3
+window-padding-color=extend
+window-theme=ghostty
