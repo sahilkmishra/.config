@@ -106,7 +106,7 @@ return {
       vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
       vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
       vim.keymap.set('n', '<leader>sb', builtin.buffers, { desc = '[S]earch Find existing [B]uffers' })
-      vim.keymap.set('n', '<leader>sc', require('telescope.builtin').colorscheme, { desc = '[S]earch [C]olorschemes' })
+      vim.keymap.set('n', '<leader>sC', require('telescope.builtin').colorscheme, { desc = '[S]earch [C]olorschemes' })
       vim.keymap.set('n', '<leader>sp', require('telescope').extensions.projects.projects, { desc = '[S]earch [P]rojects' })
 
       -- Slightly advanced example of overriding default behavior and theme
@@ -128,9 +128,23 @@ return {
       end, { desc = '[S]earch [/] in Open Files' })
 
       -- Shortcut for searching your Neovim configuration files
-      vim.keymap.set('n', '<leader>sn', function()
+      vim.keymap.set('n', '<leader>scn', function()
         builtin.find_files { cwd = vim.fn.stdpath 'config' }
-      end, { desc = '[S]earch [N]eovim files' })
+      end, { desc = '[S]earch [C]onfig [N]eovim' })
+
+      vim.keymap.set('n', '<leader>scc', function()
+        builtin.find_files { cwd = (vim.fn.stdpath 'config') .. '/..' }
+      end, { desc = '[S]earch [C]onfig [C]onfig Dir' })
+
+      vim.keymap.set('n', '<leader>scN', function()
+        require('telescope.builtin').find_files { cwd = '~/nixos_config/' }
+      end, { desc = '[S]earch [C]onfig [N]ix' })
+
+      vim.keymap.set('n', '<leader>sm', function()
+        require('telescope.builtin').man_pages {}
+      end, { desc = '[S]earch [m]an Pages' })
+
+      vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope keywords=TODO,FIX<CR>', { desc = '[S]earch [T]odos' })
     end,
   },
 }

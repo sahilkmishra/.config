@@ -11,6 +11,12 @@ return {
       --'echasnovski/mini.pick', -- optional
     },
     config = true,
+    opts = {
+      integrations = {
+        telescope = nil,
+        diffview = nil,
+      },
+    },
   },
   {
     'sindrets/diffview.nvim',

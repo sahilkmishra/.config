@@ -12,6 +12,7 @@ M.setup = function()
   vim.keymap.set('n', '<leader>eg', '<cmd>Neogit<CR>', { desc = '[E]nter [G]it' })
   vim.keymap.set('n', '<leader>ed', '<cmd>DapNew<CR>', { desc = '[E]nter [D]ebug' })
   vim.keymap.set('n', '<leader>eo', '<cmd>Neorg<CR>', { desc = '[E]nter [O]rg Mode' })
+  vim.keymap.set('n', '<leader>ea', '<cmd>Gen<CR>', { desc = '[E]nter Gen [A]I' })
   vim.keymap.set('n', '<leader>et', function()
     vim.cmd.vnew()
     vim.cmd.terminal()
@@ -21,15 +22,6 @@ M.setup = function()
   vim.keymap.set('n', '<leader>eb', '<cmd>BrowserBookmarks<CR>', { desc = '[E]nter [B]ookmarks' })
 
   -- [S]earch
-  vim.keymap.set('n', '<leader>sN', function()
-    require('telescope.builtin').find_files { cwd = '~/nixos_config/' }
-  end, { desc = '[S]earch [N]ix Config' })
-
-  vim.keymap.set('n', '<leader>sm', function()
-    require('telescope.builtin').man_pages {}
-  end, { desc = '[S]earch [m]an Pages' })
-
-  vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope keywords=TODO,FIX<CR>', { desc = '[S]earch [T]odos' })
 
   -- [T]oggle
   vim.keymap.set('n', '<leader>tr', function()
