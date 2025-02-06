@@ -158,6 +158,7 @@ return {
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       --
       local servers = {
+        java_language_server = {},
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
@@ -185,6 +186,7 @@ return {
             },
           },
         },
+        gdscript = {},
       }
 
       -- Ensure the servers and tools above are installed

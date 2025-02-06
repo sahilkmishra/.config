@@ -104,6 +104,16 @@ return {
       name = 'lldb',
     }
 
+    dap.configurations.gdscript = {
+      {
+        type = 'godot',
+        request = 'launch',
+        name = 'Launch scene',
+        project = '${workspaceFolder}',
+        launch_scene = true,
+      },
+    }
+
     dap.configurations.rust = {
       {
         name = 'Launch',
