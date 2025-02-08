@@ -12,7 +12,7 @@ return {
     init = function()
       local ls = require 'luasnip'
 
-      ls.snippets = require('luasnip-snippets').load_snippets()
+      -- ls.snippets = require('luasnip-snippets').load_snippets()
       vim.keymap.set({ 'i' }, '<C-k>', function()
         if ls.expand_or_jumpable() then
           ls.expand_or_jump()
