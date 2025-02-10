@@ -1,20 +1,23 @@
 return {
-  'folke/snacks.nvim',
+  'sahilkmishra/snacks.nvim',
   priority = 1000,
   lazy = false,
   ---@type snacks.Config
   opts = {
+
     bigfile = { enabled = true },
     dashboard = {
       sections = {
-        { section = 'header' },
+        {
+          section = 'header',
+        },
         { section = 'keys', gap = 0, padding = 2 },
         { icon = ' ', title = 'Recent Files', section = 'recent_files', indent = 2, padding = 2, cwd = true },
         { icon = ' ', title = 'Projects', section = 'projects', indent = 2, padding = 2, limit = 10, cwd = true },
+        -- TODO: can I pass in todo?
         { section = 'startup' },
       },
     },
-
     indent = { enabled = true },
     input = { enabled = true },
     notifier = {

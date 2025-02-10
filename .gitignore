@@ -119,3 +119,11 @@ nvim/lazy-lock.json
 *.sqlite3
 /containers
 nvim/lazy-lock.json
+/blender
+/clerk
+/kde.org
+kde.org/UserFeedback.org.kde.dolphin.conf
+/kde.org
+kdeglobals
+kglobalshortcutsrc
+kwinrc
