@@ -117,3 +117,5 @@ nvim/lazy-lock.json
 /wally
 /lazygit
 *.sqlite3
+/containers
+nvim/lazy-lock.json
