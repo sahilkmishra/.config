@@ -108,6 +108,7 @@ return {
       vim.keymap.set('n', '<leader>sb', builtin.buffers, { desc = '[S]earch Find existing [B]uffers' })
       vim.keymap.set('n', '<leader>sC', require('telescope.builtin').colorscheme, { desc = '[S]earch [C]olorschemes' })
       vim.keymap.set('n', '<leader>sp', require('telescope').extensions.projects.projects, { desc = '[S]earch [P]rojects' })
+      vim.keymap.set('n', '<leader>s5', require('telescope.builtin').current_buffer_fuzzy_find, { desc = '[S]earch [%]Current Buffer' })
 
       -- Slightly advanced example of overriding default behavior and theme
       vim.keymap.set('n', '<leader>/', function()
