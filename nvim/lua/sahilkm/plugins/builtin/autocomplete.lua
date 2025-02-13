@@ -107,6 +107,9 @@ return {
           { name = 'nvim_lsp' },
           { name = 'path' },
         },
+        formatting = {
+          format = require('nvim-highlight-colors').format,
+        },
       }
     end,
   },
