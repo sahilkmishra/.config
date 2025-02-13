@@ -26,9 +26,9 @@ M.setup = function()
   -- [S]earch
 
   -- [T]oggle
-  vim.keymap.set('n', '<leader>tr', function()
-    vim.opt.relativenumber = not vim.opt.rnu
-  end, { desc = '[T]oggle [R]elative Line Numbers' })
+  -- vim.keymap.set('n', '<leader>tr', function()
+  --   vim.opt.relativenumber = not vim.opt.rnu
+  -- end, { desc = '[T]oggle [R]elative Line Numbers' })
 
   -- [B]uffer
 
