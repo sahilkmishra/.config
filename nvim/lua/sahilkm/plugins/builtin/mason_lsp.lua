@@ -15,6 +15,10 @@ return {
       -- used for completion, annotations and signatures of Neovim apis
       { 'folke/neodev.nvim', opts = {} },
     },
+    opts = {
+      inlay_hints = { enabled = true },
+    },
+
     config = function()
       -- Brief aside: **What is LSP?**
       --
@@ -221,6 +225,18 @@ return {
       -- No need for mason install, already in nixOS install
       require('lspconfig').nil_ls.setup {}
       require('lspconfig').nixd.setup {}
+
+      -- enabme inlay hints
+      vim.api.nvim_create_autocmd('LspAttach', {
+        group = vim.api.nvim_create_augroup('UserLspConfig', {}),
+        callback = function(args)
+          local client = vim.lsp.get_client_by_id(args.data.client_id)
+          if client.server_capabilities.inlayHintProvider then
+            vim.lsp.inlay_hint.enable(true)
+          end
+          -- whatever other lsp config you want
+        end,
+      })
     end,
   },
 }

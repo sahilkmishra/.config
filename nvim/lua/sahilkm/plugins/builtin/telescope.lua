@@ -148,4 +148,12 @@ return {
       vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope keywords=TODO,FIX<CR>', { desc = '[S]earch [T]odos' })
     end,
   },
+  {
+    '2kabhishek/nerdy.nvim',
+    dependencies = {
+      'stevearc/dressing.nvim',
+      'nvim-telescope/telescope.nvim',
+    },
+    cmd = 'Nerdy',
+  },
 }

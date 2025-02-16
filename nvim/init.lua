@@ -4,6 +4,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.filetype = true
+vim.lsp.inlay_hint.enable(true)
 
 require('sahilkm.keymaps').setup()
 require('sahilkm.terminal').setup()
