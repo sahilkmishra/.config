@@ -4,6 +4,7 @@ return {
     'David-Kunz/gen.nvim',
     opts = {
       model = 'deepseek-r1', -- The default model to use.
+      -- model = 'llama3.2:3b', -- The default model to use.
       quit_map = 'q', -- set keymap to close the response window
       retry_map = '<c-r>', -- set keymap to re-send the current prompt
       accept_map = '<c-cr>', -- set keymap to replace the previous selection with the last result
@@ -30,6 +31,21 @@ return {
       -- list_models = '<omitted lua function>', -- Retrieves a list of model names
       result_filetype = 'markdown', -- Configure filetype of the result buffer
       debug = false, -- Prints errors and the command which is run.
+    },
+  },
+  {
+    'supermaven-inc/supermaven-nvim',
+    opts = {
+      keymaps = {
+        accept_suggestion = '<Tab>',
+        clear_suggestion = '<C-]>',
+        accept_word = '<C-j>',
+      },
+      ignore_filetypes = { cpp = true }, -- or { "cpp", }
+      color = {
+        suggestion_color = '#ffffff',
+        cterm = 244,
+      },
     },
   },
 }
