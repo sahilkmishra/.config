@@ -12,10 +12,16 @@ M.setup = function()
   vim.keymap.set('n', '<leader>eg', '<cmd>Neogit<CR>', { desc = '[E]nter [G]it' })
   vim.keymap.set('n', '<leader>ed', '<cmd>DapNew<CR>', { desc = '[E]nter [D]ebug' })
   vim.keymap.set('n', '<leader>eo', '<cmd>Neorg<CR>', { desc = '[E]nter [O]rg Mode' })
-  vim.keymap.set('n', '<leader>ea', '<cmd>Gen<CR>', { desc = '[E]nter Gen [A]I' })
+  vim.keymap.set('n', '<leader>eA', '<cmd>Gen<CR>', { desc = '[E]nter Gen [A]I' })
+
   vim.keymap.set('n', '<leader>eG', function()
     vim.fn.jobstart('godot4', { detach = true })
   end, { desc = '[E]nter [G]odot' })
+
+  vim.keymap.set('n', '<leader>ea', function()
+    vim.fn.jobstart('android-studio', { detach = true })
+  end, { desc = '[E]nter [A]ndroid Studio' })
+
   vim.keymap.set('n', '<leader>et', function()
     vim.cmd.vnew()
     vim.cmd.terminal()

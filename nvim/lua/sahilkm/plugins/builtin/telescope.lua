@@ -5,6 +5,7 @@ return {
     event = 'VimEnter',
     branch = '0.1.x',
     dependencies = {
+      'xiyaowong/telescope-emoji.nvim',
       'nvim-lua/plenary.nvim',
       { -- If encountering errors, see telescope-fzf-native README for installation instructions
         'nvim-telescope/telescope-fzf-native.nvim',
@@ -90,6 +91,7 @@ return {
       pcall(require('telescope').load_extension, 'ui-select')
       require('telescope').load_extension 'projects'
 
+      require('telescope').load_extension 'emoji'
       require('telescope').load_extension 'ssh-config'
       require('telescope').load_extension 'manix'
 
@@ -109,6 +111,7 @@ return {
       vim.keymap.set('n', '<leader>sC', require('telescope.builtin').colorscheme, { desc = '[S]earch [C]olorschemes' })
       vim.keymap.set('n', '<leader>sp', require('telescope').extensions.projects.projects, { desc = '[S]earch [P]rojects' })
 
+      vim.keymap.set('n', '<leader>se', '<cmd>Telescope emoji<CR>', { desc = '[S]earch [E]moji' })
       -- Slightly advanced example of overriding default behavior and theme
       vim.keymap.set('n', '<leader>/', function()
         -- You can pass additional configuration to Telescope to change the theme, layout, etc.
