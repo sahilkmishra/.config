@@ -39,6 +39,7 @@ return {
           F12 = '<F12>',
         },
       },
+      preset = 'helix',
 
       -- Document existing key chains
       spec = {
