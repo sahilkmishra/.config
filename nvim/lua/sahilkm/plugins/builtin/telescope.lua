@@ -1,10 +1,10 @@
 return {
-
   { -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
     branch = '0.1.x',
     dependencies = {
+      'xiyaowong/telescope-emoji.nvim',
       'nvim-lua/plenary.nvim',
       { -- If encountering errors, see telescope-fzf-native README for installation instructions
         'nvim-telescope/telescope-fzf-native.nvim',
@@ -82,6 +82,18 @@ return {
             client = 'oil', -- or 'netrw'
             ssh_config_path = '~/.ssh/config',
           },
+          emoji = {
+            action = function(emoji)
+              -- argument emoji is a table.
+              -- {name="", value="", cagegory="", description=""}
+
+              -- vim.fn.setreg('*', emoji.value)
+              -- print([[Press p or "*p to paste this emoji]] .. emoji.value)
+
+              -- insert emoji when picked
+              vim.api.nvim_put({ emoji.value }, 'c', false, true)
+            end,
+          },
         },
       }
 
@@ -90,8 +102,10 @@ return {
       pcall(require('telescope').load_extension, 'ui-select')
       require('telescope').load_extension 'projects'
 
+      require('telescope').load_extension 'emoji'
       require('telescope').load_extension 'ssh-config'
       require('telescope').load_extension 'manix'
+      require('telescope').load_extension 'nerdy'
 
       vim.keymap.set({ 'n', 'v' }, '<leader>sv', '<cmd>Telescope ssh-config<CR>', { desc = '[S]earch Ser[v]er' })
       -- See `:help telescope.builtin`
@@ -110,6 +124,7 @@ return {
       vim.keymap.set('n', '<leader>sp', require('telescope').extensions.projects.projects, { desc = '[S]earch [P]rojects' })
       vim.keymap.set('n', '<leader>s5', require('telescope.builtin').current_buffer_fuzzy_find, { desc = '[S]earch [%]Current Buffer' })
 
+      vim.keymap.set('n', '<leader>se', '<cmd>Telescope emoji<CR>', { desc = '[S]earch [E]moji' })
       -- Slightly advanced example of overriding default behavior and theme
       vim.keymap.set('n', '<leader>/', function()
         -- You can pass additional configuration to Telescope to change the theme, layout, etc.
@@ -146,6 +161,16 @@ return {
       end, { desc = '[S]earch [m]an Pages' })
 
       vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope keywords=TODO,FIX<CR>', { desc = '[S]earch [T]odos' })
+
+      vim.keymap.set('n', '<leader>si', '<cmd>Telescope nerdy<CR>', { desc = '[S]earch [i]cons ' })
     end,
+  },
+  {
+    '2kabhishek/nerdy.nvim',
+    dependencies = {
+      'stevearc/dressing.nvim',
+      'nvim-telescope/telescope.nvim',
+    },
+    cmd = 'Nerdy',
   },
 }

@@ -45,5 +45,14 @@ return {
 
       require('telescope').load_extension 'ctags_outline'
     end,
+    keys = {
+      {
+        '<leader>so',
+        function()
+          require('telescope').extensions.ctags_outline.outline()
+        end,
+        desc = '[S]earch [O]utline',
+      },
+    },
   },
 }

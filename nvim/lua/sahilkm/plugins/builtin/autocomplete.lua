@@ -111,6 +111,11 @@ return {
           format = require('nvim-highlight-colors').format,
         },
       }
+
+      cmp.setup.filetype('sql', {
+        { name = 'vim-dadbod-completion' },
+        { name = 'buffer' },
+      })
     end,
   },
 }
