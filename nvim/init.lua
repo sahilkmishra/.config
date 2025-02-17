@@ -6,6 +6,12 @@ vim.g.maplocalleader = ' '
 vim.g.filetype = true
 vim.lsp.inlay_hint.enable(true)
 
+vim.filetype.add {
+  extension = {
+    cls = 'apex',
+  },
+}
+
 require('sahilkm.keymaps').setup()
 require('sahilkm.terminal').setup()
 

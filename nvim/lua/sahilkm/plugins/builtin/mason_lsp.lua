@@ -176,6 +176,10 @@ return {
         -- tsserver = {},
         --
 
+        apex_ls = {
+          filetypes = { 'cls', 'apex', 'trigger' },
+        },
+
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
