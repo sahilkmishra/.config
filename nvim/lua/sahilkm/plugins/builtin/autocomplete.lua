@@ -106,6 +106,7 @@ return {
           { name = 'luasnip' },
           { name = 'nvim_lsp' },
           { name = 'path' },
+          { name = 'neorg' },
         },
         formatting = {
           format = require('nvim-highlight-colors').format,
