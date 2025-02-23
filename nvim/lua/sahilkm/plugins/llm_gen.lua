@@ -33,7 +33,7 @@ return {
       debug = false, -- Prints errors and the command which is run.
     },
   },
-  {
+  --[[ {
     'supermaven-inc/supermaven-nvim',
     opts = {
       keymaps = {
@@ -47,5 +47,5 @@ return {
         cterm = 244,
       },
     },
-  },
+  }, ]]
 }
