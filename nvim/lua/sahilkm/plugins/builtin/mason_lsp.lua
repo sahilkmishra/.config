@@ -243,4 +243,5 @@ return {
       })
     end,
   },
+  { 'nvim-java/nvim-java' },
 }

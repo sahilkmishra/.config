@@ -20,6 +20,9 @@ M.setup = function()
   vim.keymap.set('n', '<leader>eGe', function()
     vim.fn.jobstart('godot4 -e', { detach = true })
   end, { desc = '[E]nter [G]odot [E]dit' })
+  vim.keymap.set('n', '<leader>eGs', function()
+    vim.cmd "echo serverstart('/tmp/godot.pipe')"
+  end, { desc = '[E]nter [G]odot [S]erver(eg --listen /tmp/godot.pipe)' })
 
   vim.keymap.set('n', '<leader>ea', function()
     vim.fn.jobstart('android-studio', { detach = true })
