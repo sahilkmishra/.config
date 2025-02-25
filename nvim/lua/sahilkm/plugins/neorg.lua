@@ -1,8 +1,34 @@
 return {
   {
     'nvim-neorg/neorg',
-    lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
-    version = '*', -- Pin Neorg to the latest stable release
-    config = true,
+    lazy = false,
+    version = '*',
+    config = function()
+      require('neorg').setup {
+        load = {
+          ['core.defaults'] = {},
+          ['core.concealer'] = {},
+          ['core.completion'] = {
+            config = {
+              engine = 'nvim-cmp',
+            },
+          },
+          ['core.integrations.nvim-cmp'] = {},
+          ['core.integrations.image'] = {},
+          ['core.latex.renderer'] = {},
+          ['core.dirman'] = {
+            config = {
+              workspaces = {
+                Blog = '~/Blog',
+              },
+              default_workspace = 'Blog',
+            },
+          },
+        },
+      }
+
+      vim.wo.foldlevel = 99
+      vim.wo.conceallevel = 2
+    end,
   },
 }
