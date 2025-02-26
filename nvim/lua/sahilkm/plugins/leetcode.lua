@@ -10,12 +10,34 @@ return {
     },
     opts = {
       -- configuration goes here
+      lang = 'golang',
+      storage = {
+        home = vim.fn.stdpath 'data' .. '/leetcode',
+        cache = vim.fn.stdpath 'cache' .. '/leetcode',
+      },
+      image_support = true,
     },
     keys = {
       {
-        '<leader>L',
+        '<leader>eL',
         '<cmd>Leet<cr>',
-        desc = '[L]eet',
+        desc = '[E]nter [L]eet',
+      },
+      {
+        '<leader>LL',
+        '<cmd>Leet lang<cr>',
+        desc = '[L]eet [L]ang',
+      },
+
+      {
+        '<leader>Ls',
+        '<cmd>Leet submit<cr>',
+        desc = '[L]eet [s]ubmit',
+      },
+      {
+        '<leader>Lr',
+        '<cmd>Leet run<cr>',
+        desc = '[L]eet [r]un',
       },
     },
     hooks = {
