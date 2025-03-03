@@ -83,7 +83,8 @@ return {
 
       { '<Leader>id', '<Plug>(neorg.tempus.insert-date)' },
       { '<Leader>ct', ':Neorg roam capture selection<CR>', mode = 'v', desc = '[C]apture [T]odo' },
-      { '<Leader>ena', ':Neorg agenda day<CR>', desc = '[E]nter [N]org [A]genda' },
+      { '<Leader>ej', ':Neorg journal today<CR>', desc = '[E]nter [J]ournal' },
+      { '<Leader>ea', ':Neorg agenda day<CR>', desc = '[E]nter [A]genda' },
       { '<Leader>mm', ':Neorg cycle_task<CR>', desc = '[M]ark [M]' },
     },
   },
