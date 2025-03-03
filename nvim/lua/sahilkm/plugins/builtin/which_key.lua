@@ -39,6 +39,9 @@ return {
           F12 = '<F12>',
         },
       },
+      triggers = {
+        { '<auto>', mode = 'nxsot' },
+      },
       preset = 'helix',
 
       -- Document existing key chains
