@@ -12,7 +12,7 @@ M.setup = function()
   vim.keymap.set('n', '<leader>eg', '<cmd>Neogit<CR>', { desc = '[E]nter [G]it' })
   vim.keymap.set('n', '<leader>ed', '<cmd>DapNew<CR>', { desc = '[E]nter [D]ebug' })
   vim.keymap.set('n', '<leader>eo', '<cmd>Neorg<CR>', { desc = '[E]nter [O]rg Mode' })
-  vim.keymap.set('n', '<leader>eA', '<cmd>Gen<CR>', { desc = '[E]nter Gen [A]I' })
+  vim.keymap.set('n', '<leader>eC', '<cmd>Gen<CR>', { desc = '[E]nter [C]opilot' })
 
   vim.keymap.set('n', '<leader>eGG', function()
     vim.fn.jobstart('godot4', { detach = true })
@@ -24,7 +24,7 @@ M.setup = function()
     vim.cmd "echo serverstart('/tmp/godot.pipe')"
   end, { desc = '[E]nter [G]odot [S]erver(eg --listen /tmp/godot.pipe)' })
 
-  vim.keymap.set('n', '<leader>ea', function()
+  vim.keymap.set('n', '<leader>eA', function()
     vim.fn.jobstart('android-studio', { detach = true })
   end, { desc = '[E]nter [A]ndroid Studio' })
   vim.keymap.set('n', '<leader>ep', function()
