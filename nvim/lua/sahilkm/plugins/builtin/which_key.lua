@@ -39,6 +39,9 @@ return {
           F12 = '<F12>',
         },
       },
+      triggers = {
+        { '<auto>', mode = 'nxsot' },
+      },
       preset = 'helix',
 
       -- Document existing key chains
@@ -54,6 +57,7 @@ return {
         { '<leader>g', group = '[G]it :( unset' },
         { '<leader>u', group = '[U]nset' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+        { '<ESC>n', group = '[N]ix', mode = { 't' } },
       },
     },
   },

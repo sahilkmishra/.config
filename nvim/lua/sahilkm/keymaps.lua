@@ -75,10 +75,14 @@ M.setup = function()
   vim.keymap.set('n', '<leader>w>', '<C-w>>', { desc = '[W]indow width right' })
   vim.keymap.set('n', '<leader>w-', '<C-w>-', { desc = '[W]indow - height' })
   vim.keymap.set('n', '<leader>w+', '<C-w>+', { desc = '[W]indow + Height' })
+  vim.keymap.set('n', '<leader>w+', '<C-w>+', { desc = '[W]indow + Height' })
 
   -- Tab navigation like chrome
   vim.keymap.set('n', '<C-S-H>', '<cmd>tabprevious<CR>', { desc = 'Tab Left' })
   vim.keymap.set('n', '<C-S-L>', '<cmd>tabNext<CR>', { desc = 'Tab Right' })
+
+  vim.keymap.set('t', '<Insert>nn', 'sudo nixos-rebuild switch --flake . --impure<CR>', { desc = 'Nix Reload' })
+  vim.keymap.set('t', '<Insert>nu', 'nix flake update<CR>', { desc = 'Nix Update' })
 end
 
 return M

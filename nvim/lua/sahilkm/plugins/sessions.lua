@@ -1,5 +1,5 @@
 return {
-  {
+  --[[ {
     'rmagatti/auto-session',
     lazy = false,
 
@@ -19,5 +19,5 @@ return {
       { '<leader>sl', '<cmd>SessionSearch<cr>', desc = '[S]earch [L]oads' },
       { '<leader>ll', '<cmd>SessionSearch<cr>', desc = '[L]oad [L]oads' },
     },
-  },
+  }, ]]
 }
