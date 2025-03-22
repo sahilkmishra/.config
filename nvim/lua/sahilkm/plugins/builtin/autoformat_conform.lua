@@ -1,6 +1,6 @@
 return {
 
-  { -- Autoformat
+  --[[ { -- Autoformat
     'stevearc/conform.nvim',
     lazy = false,
     keys = {
@@ -37,4 +37,5 @@ return {
       },
     },
   },
+ ]]
 }
