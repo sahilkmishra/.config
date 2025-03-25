@@ -1,3 +1,14 @@
+---
+---Counts all Comment Occurrences
+---@param query string '|' separated queries
+---@param dir string directory to search
+---@param space integer amount of whitespace to hold
+---@return string
+local function getCountOfCommentStrings(query, dir, space)
+  local command = string.format('rg -c "%s:" %s | cut -d":" -f2 | awk \'{sum+=$1} END {print sum+0}\'', query, dir)
+  return string.format('%' .. space .. 'd', vim.fn.system(command))
+end
+
 return {
   'sahilkmishra/snacks.nvim',
   priority = 1000,
@@ -11,10 +22,16 @@ return {
         {
           section = 'header',
         },
+        -- command
+        {
+          action = ':Neorg journal today',
+          desc = 'Enter Journal',
+          icon = '',
+          key = 'j',
+        },
         { section = 'keys', gap = 0, padding = 2 },
         { icon = ' ', title = 'Recent Files', section = 'recent_files', indent = 2, padding = 2, cwd = true },
         { icon = ' ', title = 'Projects', section = 'projects', indent = 2, padding = 2, limit = 15, cwd = true },
-        -- TODO: can I pass in todo?
         { section = 'startup' },
       },
     },
@@ -61,7 +78,14 @@ return {
       function()
         Snacks.scratch.select()
       end,
-      desc = 'Select Scratch Buffer',
+      desc = '[S]elect Scratch Buffer',
+    },
+    {
+      '<leader>es',
+      function()
+        Snacks.scratch.open()
+      end,
+      desc = '[E]nter [s]cratch buffer',
     },
     {
       '<leader>n',
