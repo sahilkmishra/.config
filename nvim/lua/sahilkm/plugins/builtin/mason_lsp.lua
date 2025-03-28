@@ -226,6 +226,23 @@ return {
         },
       }
 
+      require('lspconfig').rust_analyzer.setup {
+        -- Other Configs ...
+        settings = {
+          ['rust-analyzer'] = {
+            -- Other Settings ...
+            procMacro = {
+              ignored = {
+                leptos_macro = {
+                  -- optional: --
+                  -- "component",
+                  'server',
+                },
+              },
+            },
+          },
+        },
+      }
       -- No need for mason install, already in nixOS install
       require('lspconfig').nil_ls.setup {}
       require('lspconfig').nixd.setup {}
