@@ -57,6 +57,7 @@ return {
         { '<leader>g', group = '[G]it :( unset' },
         { '<leader>u', group = '[U]nset' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+        { '<leader>R', group = '[R]EST api', mode = { 'n', 'v' } },
         { '<ESC>n', group = '[N]ix', mode = { 't' } },
       },
     },
