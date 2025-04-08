@@ -345,7 +345,7 @@
 	"on-click":"firefox headon:9001",
 	"format": "{icon}",
 	"format-icons": {
-			"default": "",
+			"default": "",
 	},
 },
 "custom/nvim": {
