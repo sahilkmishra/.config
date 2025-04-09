@@ -65,6 +65,14 @@ window#waybar {
 	/*box-shadow: inset -3px 0px;*/
 }
 
+#custom-nvim:hover {
+	background-color: @bg3;
+}
+
+label:hover {
+	background-color: @bg3;
+}
+
 #privacy {
 	background-color: @red;
 	color: @bg0;
