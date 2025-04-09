@@ -61,7 +61,7 @@ window#waybar {
 #custom-mako {
 	padding: 3px 0px;
 	/*margin: 4px 0px; */
-	background-color: @surimiOrange;
+	/* background-color: @surimiOrange; */
 	/*box-shadow: inset -3px 0px;*/
 }
 

@@ -184,7 +184,7 @@
 	"tooltip-format-wifi":"ESSID: {essid}\nFrequency: {frequency} GHz\nStrength: {signalStrength}%\nIP: {ipaddr}",
 	"tooltip-format-disconnected":  "Disconnected",
 
-	"on-click":"alacritty -T 'Floating Term nmtui' -e nmtui connect",
+	"on-click":"ghostty --title \"Floating Term nmtui\" -e nmtui connect",
 	"on-click-right": "rfkill toggle wifi",
 },
 
@@ -244,7 +244,7 @@
         },
 
         "on-click": "flatpak run com.saivert.pwvucontrol &>/dev/null",
-        //"on-click": "alacritty -T 'Floating Term pulsemixer' -e ~/.local/bin/pulsemixer",
+        //"on-click": "ghostty --title 'Floating Term pulsemixer' -e ~/.local/bin/pulsemixer",
 	"on-click-right": "pactl set-sink-mute 0 toggle && $HOME/.scripts/progressbar.sh --volume-mute",
 
 	"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1% && $HOME/.scripts/progressbar.sh --volume",
@@ -260,7 +260,7 @@
 	"format-source-muted": "",
 
         "on-click": "flatpak run com.saivert.pwvucontrol &>/dev/null",
-        //"on-click": "alacritty -T 'Floating Term pulsemixer' -e ~/.local/bin/pulsemixer",
+        //"on-click": "ghostty --title 'Floating Term pulsemixer' -e ~/.local/bin/pulsemixer",
 	"on-click-right": "pactl set-source-mute 0 1 && $HOME/.scripts/progressbar.sh --mic-mute",
 
 	"on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1% && $HOME/.scripts/progressbar.sh --mic-volume",
@@ -315,7 +315,7 @@
 
 	"tooltip": false,
 
-	"on-click": "alacritty -T 'Floating Term btop' -e btop"
+	"on-click": "ghostty --title \"Floating Term btop\" -e btop"
 }, 
 // }}}
 
@@ -346,6 +346,13 @@
 	"format": "{icon}",
 	"format-icons": {
 			"default": "",
+	},
+},
+"custom/github-desktop": {
+	"on-click":"github-desktop",
+	"format": "{icon}",
+	"format-icons": {
+			"default": "",
 	},
 },
 "custom/nvim": {

@@ -23,21 +23,23 @@
 	"sway/window",
 	"sway/mode",
 ],
+	// "tray",
+	// "backlight", 
+	// "pulseaudio", 
+	// "pulseaudio#source",
+	// "network", 
+	// "bluetooth",
+	// "cpu", 
+	// "memory", 
+	// "temperature", 
+	// "sway/language",
+	// "keyboard-state",
+	// "battery",
+	// "clock"
 
 "modules-right": [
-	"tray",
-	"backlight", 
-	"pulseaudio", 
-	"pulseaudio#source",
-	"network", 
-	"bluetooth",
-	"cpu", 
-	"memory", 
-	"temperature", 
-	"sway/language",
-	"keyboard-state",
-	"battery",
-	"clock"
+
+	"custom/github-desktop",
 ],
 
 // PulseAudio {{{
