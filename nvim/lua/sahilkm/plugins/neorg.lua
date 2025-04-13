@@ -10,6 +10,7 @@ return {
       --- OPTION 1: Telescope
       'nvim-telescope/telescope.nvim',
       'nvim-lua/plenary.nvim',
+      'nvim-neorg/neorg-telescope',
       -- OR OPTION 2: Fzf-Lua
       -- 'ibhagwan/fzf-lua',
       -- OR OPTION 3: Snacks
@@ -30,6 +31,7 @@ return {
           },
           ['core.integrations.nvim-cmp'] = {},
           ['core.integrations.image'] = {},
+          ['core.integrations.telescope'] = {},
           ['core.latex.renderer'] = {},
           ['core.dirman'] = {
             config = {
