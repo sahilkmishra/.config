@@ -369,11 +369,32 @@
 			"default": "󱘓",
 	},
 },
+	"custom/zeal-documentation": {
+	"on-click":"zeal",
+	"format": "{icon}",
+	"format-icons": {
+			"default": "",
+	},
+},
 "custom/agenda": {
 	"on-click":"ghostty -e 'nvim . -c \"Neorg agenda day\"'",
 	"format": "{icon}",
 	"format-icons": {
 			"default": "󱨰",
+	},
+},
+"custom/search-agenda": {
+	"on-click":"ghostty -e 'nvim . -c \"Telescope neorg find_linkable\"'",
+	"format": "{icon}",
+	"format-icons": {
+			"default": "󰺅",
+	},
+},
+"custom/search-agenda-files": {
+	"on-click":"ghostty -e 'nvim . -c \"Telescope neorg find_norg_files\"'",
+	"format": "{icon}",
+	"format-icons": {
+			"default": "󰱼",
 	},
 }
 // }}}

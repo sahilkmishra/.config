@@ -17,11 +17,15 @@
 	"group/privacygroup",
 	"sway/scratchpad",
 	"sway/workspaces", 
+
 ],
 
 "modules-center": [
 	"sway/window",
 	"sway/mode",
+	"custom/search-agenda",
+	"custom/search-agenda-files",
+
 ],
 	// "tray",
 	// "backlight", 
@@ -38,6 +42,7 @@
 	// "clock"
 
 "modules-right": [
+	"custom/zeal-documentation",
 	"custom/github-desktop",
 ],
 
