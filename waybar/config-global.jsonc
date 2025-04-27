@@ -342,7 +342,7 @@
 },
 "custom/gitea": {
 	"format":"{Git}",
-	"on-click":"firefox headon:9001",
+	"on-click":"firefox https://headon.hawk-tyrannosaurus.ts.net",
 	"format": "{icon}",
 	"format-icons": {
 			"default": "",
