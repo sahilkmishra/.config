@@ -24,7 +24,8 @@
 	"sway/mode",
 	"custom/search-agenda",
 	"custom/search-agenda-files",
-	"custom/annoyances"
+	"custom/annoyances",
+"custom/life_meta"
 
 ],
 	// "tray",
@@ -78,7 +79,9 @@
 	"sway/mode",
 	"custom/search-agenda",
 	"custom/search-agenda-files",
-	"custom/annoyances"
+	"custom/annoyances",
+"custom/life_meta"
+
 
 ],
 	// "tray",
@@ -132,7 +135,9 @@
 	"sway/mode",
 	"custom/search-agenda",
 	"custom/search-agenda-files",
-	"custom/annoyances"
+	"custom/annoyances",
+"custom/life_meta"
+
 
 ],
 	// "tray",

@@ -356,6 +356,14 @@
 			"default": "󱌹",
 	},
 },
+"custom/life_meta": {
+	"format":"{Git}",
+	"on-click":"firefox https://www.figma.com/board/ca4XrpInQoaWNhhivJloid/NuSys?node-id=1-59&t=JCc5Vj1HBPnNNiF8-0",
+	"format": "{icon}",
+	"format-icons": {
+			"default": "󰧋",
+	},
+},
 
 "custom/github-desktop": {
 	"on-click":"github-desktop",

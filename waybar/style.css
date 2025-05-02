@@ -57,6 +57,13 @@ window#waybar {
 	color: @bg0;
 	/*box-shadow: inset -3px 0px;*/
 }
+#custom-life_meta {
+	border: 2px black;
+	color:#090;
+	/*margin: 4px 0px; */
+	/* background-color: @surimiOrange; */
+	/*box-shadow: inset -3px 0px;*/
+}
 
 #custom-mako {
 	padding: 3px 0px;
