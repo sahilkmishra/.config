@@ -357,7 +357,6 @@
 	},
 },
 
-
 "custom/github-desktop": {
 	"on-click":"github-desktop",
 	"format": "{icon}",
