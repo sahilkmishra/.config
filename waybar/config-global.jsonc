@@ -348,6 +348,16 @@
 			"default": "",
 	},
 },
+"custom/annoyances": {
+	"format":"{Git}",
+	"on-click":"firefox https://www.figma.com/board/3g41vElP5Pcr8CFRhTCPNZ/Annoyances?node-id=0-1&p=f&t=IpAKWJQA3Nv76Cxi-0",
+	"format": "{icon}",
+	"format-icons": {
+			"default": "󱌹",
+	},
+},
+
+
 "custom/github-desktop": {
 	"on-click":"github-desktop",
 	"format": "{icon}",
