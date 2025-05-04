@@ -137,7 +137,7 @@ return {
         builtin.live_grep {
           cwd = vim.fn.stdpath 'data',
         }
-      end, { desc = '[S]earch [/] in Open Files' })
+      end, { desc = '[S]earch [L]azy Data' })
 
       -- It's also possible to pass additional configuration options.
       --  See `:help telescope.builtin.live_grep()` for information about particular keys
