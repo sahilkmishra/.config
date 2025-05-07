@@ -8,7 +8,6 @@
 
 "modules-left":	[
 	 "idle_inhibitor",
-	"custom/mako",
 	"custom/spotify",
 	"custom/gitea",
 	"custom/nvim",
@@ -16,12 +15,18 @@
 	"custom/todaysNote",
 	"group/privacygroup",
 	"sway/scratchpad",
-	"sway/workspaces", 
+	"sway/workspaces"
+
 ],
 
 "modules-center": [
 	"sway/window",
 	"sway/mode",
+	"custom/search-agenda",
+	"custom/search-agenda-files",
+	"custom/annoyances",
+"custom/life_meta"
+
 ],
 	// "tray",
 	// "backlight", 
@@ -38,6 +43,7 @@
 	// "clock"
 
 "modules-right": [
+	"custom/zeal-documentation",
 	"custom/github-desktop",
 ],
 
@@ -55,34 +61,46 @@
 "include": "~/.config/waybar/config-global.jsonc",
 "position": "right", 
 
-"modules-left": [
-	"idle_inhibitor",
-	"custom/mako",
+"modules-left":	[
+	 "idle_inhibitor",
 	"custom/spotify",
 	"custom/gitea",
+	"custom/nvim",
+	"custom/agenda",
+	"custom/todaysNote",
 	"group/privacygroup",
 	"sway/scratchpad",
-        "sway/workspaces", 
+	"sway/workspaces"
+
 ],
 
 "modules-center": [
 	"sway/window",
 	"sway/mode",
+	"custom/search-agenda",
+	"custom/search-agenda-files",
+	"custom/annoyances",
+"custom/life_meta"
+
+
 ],
+	// "tray",
+	// "backlight", 
+	// "pulseaudio", 
+	// "pulseaudio#source",
+	// "network", 
+	// "bluetooth",
+	// "cpu", 
+	// "memory", 
+	// "temperature", 
+	// "sway/language",
+	// "keyboard-state",
+	// "battery",
+	// "clock"
 
 "modules-right": [
-	"tray",
-	"pulseaudio", 
-	"pulseaudio#source",
-	"network", 
-	"bluetooth",
-	"cpu", 
-	"memory", 
-	"temperature", 
-	"sway/language",
-	"keyboard-state",
-	"battery",
-	"clock"
+	"custom/zeal-documentation",
+	"custom/github-desktop",
 ],
 
 // PulseAudio {{{
@@ -95,38 +113,50 @@
 },
 {
 
-"output": ["DP-1"],
+"output": ["DP-1", "HEADLESS-1"],
 "include": "~/.config/waybar/config-global.jsonc",
 "position": "right", 
 
-"modules-left": [
-	"idle_inhibitor",
-	"custom/mako",
+"modules-left":	[
+	 "idle_inhibitor",
 	"custom/spotify",
 	"custom/gitea",
+	"custom/nvim",
+	"custom/agenda",
+	"custom/todaysNote",
 	"group/privacygroup",
 	"sway/scratchpad",
-        "sway/workspaces", 
+	"sway/workspaces"
+
 ],
 
 "modules-center": [
 	"sway/window",
 	"sway/mode",
+	"custom/search-agenda",
+	"custom/search-agenda-files",
+	"custom/annoyances",
+"custom/life_meta"
+
+
 ],
+	// "tray",
+	// "backlight", 
+	// "pulseaudio", 
+	// "pulseaudio#source",
+	// "network", 
+	// "bluetooth",
+	// "cpu", 
+	// "memory", 
+	// "temperature", 
+	// "sway/language",
+	// "keyboard-state",
+	// "battery",
+	// "clock"
 
 "modules-right": [
-	"tray",
-	"pulseaudio", 
-	"pulseaudio#source",
-	"network", 
-	"bluetooth",
-	"cpu", 
-	"memory", 
-	"temperature", 
-	"sway/language",
-	"keyboard-state",
-	"battery",
-	"clock"
+	"custom/zeal-documentation",
+	"custom/github-desktop",
 ],
 
 // PulseAudio {{{
@@ -135,49 +165,6 @@
 	"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1% && $HOME/.scripts/progressbar.sh --volume 'DP-1'",
 },
 // }}}
+}
 
-},
-{
-
-"output": ["HEADLESS-1"],
-"include": "~/.config/waybar/config-global.jsonc",
-"position": "right", 
-
-"modules-left": [
-	"idle_inhibitor",
-	"custom/mako",
-	"custom/spotify",
-	"custom/gitea",
-	"group/privacygroup",
-	"sway/scratchpad",
-        "sway/workspaces", 
-],
-
-"modules-center": [
-	"sway/window",
-	"sway/mode",
-],
-
-"modules-right": [
-	"tray",
-	"pulseaudio", 
-	"pulseaudio#source",
-	"network", 
-	"bluetooth",
-	"cpu", 
-	"memory", 
-	"temperature", 
-	"sway/language",
-	"keyboard-state",
-	"battery",
-	"clock"
-],
-
-// PulseAudio {{{
-"pulseaudio": {
-	"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1% && $HOME/.scripts/progressbar.sh --volume 'HEADLESS-1'",
-	"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1% && $HOME/.scripts/progressbar.sh --volume 'HEADLESS-1'",
-},
-// }}}
-
-}]
+]

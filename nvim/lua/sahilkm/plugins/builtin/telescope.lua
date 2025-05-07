@@ -133,6 +133,11 @@ return {
           previewer = false,
         })
       end, { desc = '[/] Fuzzily search in current buffer' })
+      vim.keymap.set('n', '<leader>sl', function()
+        builtin.live_grep {
+          cwd = vim.fn.stdpath 'data',
+        }
+      end, { desc = '[S]earch [L]azy Data' })
 
       -- It's also possible to pass additional configuration options.
       --  See `:help telescope.builtin.live_grep()` for information about particular keys
