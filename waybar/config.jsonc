@@ -1,170 +1,157 @@
 // vim: foldmethod=marker
 
-[{
+[
+	{
+		"output": "eDP-1",
+		"include": "~/.config/waybar/config-global.jsonc",
+		"position": "left",
 
-"output": "eDP-1",
-"include": "~/.config/waybar/config-global.jsonc",
-"position": "left", 
+		"modules-left": [
+			"idle_inhibitor",
+			"custom/spotify",
+			"custom/gitea",
+			"custom/nvim",
+			"custom/agenda",
+			"custom/todaysNote",
+			"group/privacygroup",
+			"sway/scratchpad",
+			"sway/workspaces"
+		],
 
-"modules-left":	[
-	 "idle_inhibitor",
-	"custom/spotify",
-	"custom/gitea",
-	"custom/nvim",
-	"custom/agenda",
-	"custom/todaysNote",
-	"group/privacygroup",
-	"sway/scratchpad",
-	"sway/workspaces"
+		"modules-center": [
+			"sway/window",
+			"sway/mode",
+			"custom/search-agenda",
+			"custom/search-agenda-files",
+			"custom/annoyances",
+			"custom/life_meta"
+		],
+		// "tray",
+		// "backlight",
+		// "pulseaudio",
+		// "pulseaudio#source",
+		// "network",
+		// "bluetooth",
+		// "cpu",
+		// "memory",
+		// "temperature",
+		// "sway/language",
+		// "keyboard-state",
+		// "battery",
+		// "clock"
 
-],
+		"modules-right": ["custom/zeal-documentation", "custom/github-desktop"],
 
-"modules-center": [
-	"sway/window",
-	"sway/mode",
-	"custom/search-agenda",
-	"custom/search-agenda-files",
-	"custom/annoyances",
-"custom/life_meta"
+		// PulseAudio {{{
+		"pulseaudio": {
+			"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1% && $HOME/.scripts/progressbar.sh --volume 'eDP-1'",
+			"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1% && $HOME/.scripts/progressbar.sh --volume 'eDP-1'"
+		}
+		// }}}
+	},
+	{
+		"output": ["HDMI-A-1"],
+		"include": "~/.config/waybar/config-global.jsonc",
+		"position": "right",
 
-],
-	// "tray",
-	// "backlight", 
-	// "pulseaudio", 
-	// "pulseaudio#source",
-	// "network", 
-	// "bluetooth",
-	// "cpu", 
-	// "memory", 
-	// "temperature", 
-	// "sway/language",
-	// "keyboard-state",
-	// "battery",
-	// "clock"
+		"modules-left": [
+			"idle_inhibitor",
+			"custom/spotify",
+			"custom/gitea",
+			"custom/nvim",
+			"custom/agenda",
+			"custom/todaysNote",
+			"group/privacygroup",
+			"sway/scratchpad",
+			"sway/workspaces"
+		],
 
-"modules-right": [
-	"custom/zeal-documentation",
-	"custom/github-desktop",
-],
+		"modules-center": [
+			"sway/window",
+			"sway/mode",
+			"custom/search-agenda",
+			"custom/search-agenda-files",
+			"custom/annoyances",
+			"custom/life_meta"
+		],
+		// "tray",
+		// "backlight",
+		// "pulseaudio",
+		// "pulseaudio#source",
+		// "network",
+		// "bluetooth",
+		// "cpu",
+		// "memory",
+		// "temperature",
+		// "sway/language",
+		// "keyboard-state",
+		// "battery",
+		// "clock"
 
-// PulseAudio {{{
-"pulseaudio": {
-	"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1% && $HOME/.scripts/progressbar.sh --volume 'eDP-1'",
-	"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1% && $HOME/.scripts/progressbar.sh --volume 'eDP-1'",
-},
-// }}}
+		"modules-right": [
+			"custom/godot",
+			"custom/plasticity",
+			"custom/zeal-documentation",
+			"custom/github-desktop"
+		],
 
-},
-{
+		// PulseAudio {{{
+		"pulseaudio": {
+			"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1% && $HOME/.scripts/progressbar.sh --volume 'HDMI-A-1'",
+			"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1% && $HOME/.scripts/progressbar.sh --volume 'HDMI-A-1'"
+		}
+		// }}}
+	},
+	{
+		"output": ["DP-1", "HEADLESS-1"],
+		"include": "~/.config/waybar/config-global.jsonc",
+		"position": "right",
 
-"output": ["HDMI-A-1"],
-"include": "~/.config/waybar/config-global.jsonc",
-"position": "right", 
+		"modules-left": [
+			"idle_inhibitor",
+			"custom/spotify",
+			"custom/gitea",
+			"custom/nvim",
+			"custom/agenda",
+			"custom/todaysNote",
+			"group/privacygroup",
+			"sway/scratchpad",
+			"sway/workspaces"
+		],
 
-"modules-left":	[
-	 "idle_inhibitor",
-	"custom/spotify",
-	"custom/gitea",
-	"custom/nvim",
-	"custom/agenda",
-	"custom/todaysNote",
-	"group/privacygroup",
-	"sway/scratchpad",
-	"sway/workspaces"
+		"modules-center": [
+			"sway/window",
+			"sway/mode",
+			"custom/search-agenda",
+			"custom/search-agenda-files",
+			"custom/annoyances",
+			"custom/life_meta"
+		],
+		// "tray",
+		// "backlight",
+		// "pulseaudio",
+		// "pulseaudio#source",
+		// "network",
+		// "bluetooth",
+		// "cpu",
+		// "memory",
+		// "temperature",
+		// "sway/language",
+		// "keyboard-state",
+		// "battery",
+		// "clock"
 
-],
+		"modules-right": [
+			"custom/plasticity",
+			"custom/zeal-documentation",
+			"custom/github-desktop"
+		],
 
-"modules-center": [
-	"sway/window",
-	"sway/mode",
-	"custom/search-agenda",
-	"custom/search-agenda-files",
-	"custom/annoyances",
-"custom/life_meta"
-
-
-],
-	// "tray",
-	// "backlight", 
-	// "pulseaudio", 
-	// "pulseaudio#source",
-	// "network", 
-	// "bluetooth",
-	// "cpu", 
-	// "memory", 
-	// "temperature", 
-	// "sway/language",
-	// "keyboard-state",
-	// "battery",
-	// "clock"
-
-"modules-right": [
-	"custom/zeal-documentation",
-	"custom/github-desktop",
-],
-
-// PulseAudio {{{
-"pulseaudio": {
-	"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1% && $HOME/.scripts/progressbar.sh --volume 'HDMI-A-1'",
-	"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1% && $HOME/.scripts/progressbar.sh --volume 'HDMI-A-1'",
-},
-// }}}
-
-},
-{
-
-"output": ["DP-1", "HEADLESS-1"],
-"include": "~/.config/waybar/config-global.jsonc",
-"position": "right", 
-
-"modules-left":	[
-	 "idle_inhibitor",
-	"custom/spotify",
-	"custom/gitea",
-	"custom/nvim",
-	"custom/agenda",
-	"custom/todaysNote",
-	"group/privacygroup",
-	"sway/scratchpad",
-	"sway/workspaces"
-
-],
-
-"modules-center": [
-	"sway/window",
-	"sway/mode",
-	"custom/search-agenda",
-	"custom/search-agenda-files",
-	"custom/annoyances",
-"custom/life_meta"
-
-
-],
-	// "tray",
-	// "backlight", 
-	// "pulseaudio", 
-	// "pulseaudio#source",
-	// "network", 
-	// "bluetooth",
-	// "cpu", 
-	// "memory", 
-	// "temperature", 
-	// "sway/language",
-	// "keyboard-state",
-	// "battery",
-	// "clock"
-
-"modules-right": [
-	"custom/zeal-documentation",
-	"custom/github-desktop",
-],
-
-// PulseAudio {{{
-"pulseaudio": {
-	"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1% && $HOME/.scripts/progressbar.sh --volume 'DP-1'",
-	"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1% && $HOME/.scripts/progressbar.sh --volume 'DP-1'",
-},
-// }}}
-}
-
+		// PulseAudio {{{
+		"pulseaudio": {
+			"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1% && $HOME/.scripts/progressbar.sh --volume 'DP-1'",
+			"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1% && $HOME/.scripts/progressbar.sh --volume 'DP-1'"
+		}
+		// }}}
+	}
 ]
