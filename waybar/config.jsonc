@@ -40,7 +40,11 @@
 		// "battery",
 		// "clock"
 
-		"modules-right": ["custom/zeal-documentation", "custom/github-desktop"],
+		"modules-right": [
+			"custom/obsidian",
+			"custom/zeal-documentation",
+			"custom/github-desktop"
+		],
 
 		// PulseAudio {{{
 		"pulseaudio": {
@@ -89,6 +93,7 @@
 		// "clock"
 
 		"modules-right": [
+			"custom/obsidian",
 			"custom/godot",
 			"custom/plasticity",
 			"custom/zeal-documentation",
