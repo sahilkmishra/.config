@@ -5,3 +5,5 @@ end
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+set -g fish_key_bindings fish_vi_key_bindings
