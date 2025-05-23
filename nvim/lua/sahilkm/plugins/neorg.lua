@@ -24,11 +24,27 @@ return {
         load = {
           ['core.defaults'] = {},
           ['core.concealer'] = {},
+          ['core.qol.toc'] = {
+            auto_toc = {
+              enter = true,
+              open = true,
+            },
+          },
+          ['core.esupports.hop'] = {},
+          ['core.qol.todo_items'] = {
+            create_todo_items = true,
+            create_todo_parents = true,
+            -- order = ['undone', 'ambiguous', 'done', 'pending'],
+          },
+          ['core.todo-introspector'] = {
+            highlights_group = 'DiffAdd',
+          },
           ['core.completion'] = {
             config = {
               engine = 'nvim-cmp',
             },
           },
+          ['core.export.markdown'] = {},
           ['core.integrations.nvim-cmp'] = {},
           ['core.integrations.image'] = {},
           ['core.integrations.telescope'] = {},
@@ -42,6 +58,8 @@ return {
             },
           },
           ['core.syntax'] = {},
+          ['core.summary'] = { strategy = 'default' },
+          ['core.esupports.metagen'] = {},
           ['core.neorgcmd'] = {},
           ['core.queries.native'] = {},
           ['core.fs'] = {},
@@ -67,8 +85,8 @@ return {
           ['external.roam'] = {
             config = {
               fuzzy_finder = 'Telescope', -- OR "Fzf" OR "Snacks". Defaults to "Telescope"
-              fuzzy_backlinks = false, -- Set to "true" for backlinks in fuzzy finder instead of buffer
-              roam_base_directory = '', -- Directory in current workspace to store roam nodes
+              fuzzy_backlinks = true, -- Set to "true" for backlinks in fuzzy finder instead of buffer
+              roam_base_directory = '.roam', -- Directory in current workspace to store roam nodes
               node_name_randomiser = false, -- Tokenise node name suffix for more randomisation
               node_name_snake_case = false, -- snake_case the names if node_name_randomiser = false
             },
@@ -83,7 +101,8 @@ return {
     end,
     keys = {
 
-      { '<Leader>id', '<Plug>(neorg.tempus.insert-date)' },
+      { '<Leader>en', ':Neorg<CR>', desc = '[E]nter [N]eorg' },
+      { '<Leader>id', '<Plug>(neorg.tempus.insert-date)', desc = '[i]nsert [d]ate' },
       { '<Leader>ct', ':Neorg roam capture selection<CR>', mode = 'v', desc = '[C]apture [T]odo' },
       { '<Leader>ej', ':Neorg journal today<CR>', desc = '[E]nter [J]ournal' },
       { '<Leader>ea', ':Neorg agenda day<CR>', desc = '[E]nter [A]genda' },

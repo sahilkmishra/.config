@@ -5,41 +5,6 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][1]
-ItemGeometries-1920x1080=Applet-24:0,304,384,560,0;
-ItemGeometriesHorizontal=Applet-24:0,304,384,560,0;
-activityId=7a174590-b097-4502-bb36-39348a5d2c34
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][1][Applets][24]
-immutability=1
-plugin=org.kde.plasma.notes
-
-[Containments][1][Applets][24][Configuration][General]
-cursorPosition=279
-fontSize=10
-noteId=2134f869-060b-4790-a444-25dd739191
-
-[Containments][1][ConfigDialog]
-DialogHeight=630
-DialogWidth=840
-
-[Containments][1][General]
-ToolBoxButtonState=topcenter
-ToolBoxButtonX=505
-positions={"1920x1080":["1"\\,"16"\\,"desktop:/chrome-nfmchjfdegfejojdgjcknfcaialahihh-Default.desktop"\\,"0"\\,"1"\\,"desktop:/start_doom.sh"\\,"0"\\,"0"]}
-sortMode=-1
-
-[Containments][1][Wallpaper][org.kde.image][General]
-FillMode=1
-Image=/home/civic/Pictures/original_01a.png
-SlidePaths=/nix/store/sprbf4060wgc0p39xa6j6589l2z0hfcs-breeze-qt5-5.27.11-bin/share/wallpapers/,/run/current-system/sw/share/wallpapers/
-
 [Containments][2]
 activityId=
 formfactor=2
@@ -57,6 +22,9 @@ plugin=org.kde.plasma.digitalclock
 PreloadWeight=100
 popupHeight=550
 popupWidth=484
+
+[Containments][2][Applets][18][Configuration][Appearance]
+fontWeight=400
 
 [Containments][2][Applets][19]
 immutability=1
@@ -97,7 +65,7 @@ DialogHeight=630
 DialogWidth=840
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=preferred://filemanager,applications:systemsettings.desktop,preferred://browser
+launchers=preferred://filemanager,applications:systemsettings.desktop,applications:firefox.desktop,applications:com.mitchellh.ghostty.desktop,applications:obsidian.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -118,14 +86,40 @@ DialogWidth=1920
 [Containments][2][General]
 AppletOrder=3;4;6;5;7;18;19
 
-[Containments][26]
-activityId=7a174590-b097-4502-bb36-39348a5d2c34
+[Containments][28]
+ItemGeometries-1920x1080=
+ItemGeometries-2991x1252=
+ItemGeometriesHorizontal=
+activityId=f4e53cce-ca7a-4a35-9c95-23adf1f52d84
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][28][General]
+positions={"1920x1080":[],"2991x1252":[]}
+
+[Containments][28][Wallpaper][org.kde.image][General]
+Image=/home/civic/Pictures/original_01a.png
+SlidePaths=/nix/store/zjlpzxi8wpbwqyrgxg5a67jdymllsk14-breeze-6.3.4/share/wallpapers/,/run/current-system/sw/share/wallpapers/
+
+[Containments][29]
+activityId=f4e53cce-ca7a-4a35-9c95-23adf1f52d84
 formfactor=0
 immutability=1
 lastScreen=1
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
+
+[Containments][29][General]
+positions={"2991x1252":[]}
+
+[Containments][29][Wallpaper][org.kde.image][General]
+Image=/home/civic/Pictures/original_01a.png
+SlidePaths=/nix/store/zjlpzxi8wpbwqyrgxg5a67jdymllsk14-breeze-6.3.4/share/wallpapers/,/run/current-system/sw/share/wallpapers/
 
 [Containments][8]
 activityId=
@@ -153,6 +147,9 @@ PreloadWeight=55
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
+[Containments][8][Applets][12][Configuration]
+PreloadWeight=60
+
 [Containments][8][Applets][13]
 immutability=1
 plugin=org.kde.kscreen
@@ -165,10 +162,9 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][14][Configuration]
-PreloadWeight=75
+PreloadWeight=100
 
 [Containments][8][Applets][14][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][8][Applets][15]
@@ -206,14 +202,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][21][Configuration]
-PreloadWeight=21
+PreloadWeight=5
 
 [Containments][8][Applets][22]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][22][Configuration]
-PreloadWeight=97
+PreloadWeight=99
 
 [Containments][8][Applets][23]
 immutability=1
@@ -227,18 +223,18 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][25][Configuration]
-PreloadWeight=97
+PreloadWeight=51
 
 [Containments][8][Applets][26]
 immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][8][Applets][26][Configuration]
-PreloadWeight=99
+PreloadWeight=88
 
 [Containments][8][Applets][27]
 immutability=1
-plugin=org.kde.kdeconnect
+plugin=org.kde.plasma.cameraindicator
 
 [Containments][8][Applets][27][Configuration]
 PreloadWeight=55
@@ -255,9 +251,9 @@ DialogHeight=630
 DialogWidth=840
 
 [Containments][8][General]
-extraItems=org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kscreen,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kdeconnect
-knownItems=org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kscreen,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kdeconnect
+extraItems=org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kscreen,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.cameraindicator,org.kde.plasma.brightness
+knownItems=org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kscreen,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.cameraindicator,org.kde.plasma.brightness
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/chrome-nfmchjfdegfejojdgjcknfcaialahihh-Default.desktop,0,7a174590-b097-4502-bb36-39348a5d2c34,desktop:/start_doom.sh,0,7a174590-b097-4502-bb36-39348a5d2c34
+screenMapping=desktop:/start_doom.sh,0,7a174590-b097-4502-bb36-39348a5d2c34,desktop:/chrome-nfmchjfdegfejojdgjcknfcaialahihh-Default.desktop,0,7a174590-b097-4502-bb36-39348a5d2c34

@@ -4,4 +4,5 @@ vim.api.nvim_set_keymap('i', '<M-C-t>', '<Plug>(neorg.promo.promote)', { noremap
 local set = vim.opt_local
 
 -- TODO: unset line numbers
-require('snacks.toggle').line_number()
+
+vim.wo.wrap = false
