@@ -10,7 +10,7 @@ return {
       },
     },
   },
-  { -- optional blink completion source for require statements and module annotations
+  --[[ { -- optional blink completion source for require statements and module annotations
     'saghen/blink.cmp',
     opts = {
       sources = {
@@ -26,6 +26,6 @@ return {
         },
       },
     },
-  },
+  }, ]]
   { 'folke/neodev.nvim', enabled = false }, -- make sure to uninstall or disable neodev.nvim
 }

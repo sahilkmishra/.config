@@ -37,6 +37,14 @@ M.setup = function()
     vim.cmd.wincmd 'J'
     vim.api.nvim_win_set_height(0, 5)
   end, { desc = '[E]nter [T]erminal' })
+  vim.keymap.set('n', '<leader>eT', function()
+    Snacks.input({ prompt = 'What command to run:' }, function(value)
+      vim.cmd.vnew()
+      vim.cmd.terminal('mprocs "' .. value .. '"')
+      vim.api.nvim_win_set_height(0, 15)
+      vim.cmd.wincmd 'a'
+    end)
+  end, { desc = '[E]nter [T]erminal MProcs' })
   vim.keymap.set('n', '<leader>eb', '<cmd>BrowserBookmarks<CR>', { desc = '[E]nter [B]ookmarks' })
 
   -- [S]earch

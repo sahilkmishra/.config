@@ -176,6 +176,7 @@ return {
         -- tsserver = {},
         --
 
+        -- nix = { 'nixd', 'rnix-lsp"', 'nil' },
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
