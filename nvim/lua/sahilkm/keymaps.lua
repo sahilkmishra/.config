@@ -31,20 +31,6 @@ M.setup = function()
     vim.fn.jobstart('Plasticity', { detach = true })
   end, { desc = '[E]nter [P]lasticity' })
 
-  vim.keymap.set('n', '<leader>et', function()
-    vim.cmd.vnew()
-    vim.cmd.terminal()
-    vim.cmd.wincmd 'J'
-    vim.api.nvim_win_set_height(0, 5)
-  end, { desc = '[E]nter [T]erminal' })
-  vim.keymap.set('n', '<leader>eT', function()
-    Snacks.input({ prompt = 'What command to run:' }, function(value)
-      vim.cmd.vnew()
-      vim.cmd.terminal('mprocs "' .. value .. '"')
-      vim.api.nvim_win_set_height(0, 15)
-      vim.cmd.wincmd 'a'
-    end)
-  end, { desc = '[E]nter [T]erminal MProcs' })
   vim.keymap.set('n', '<leader>eb', '<cmd>BrowserBookmarks<CR>', { desc = '[E]nter [B]ookmarks' })
 
   -- [S]earch
@@ -91,6 +77,8 @@ M.setup = function()
 
   vim.keymap.set('t', '<Insert>nn', 'sudo nixos-rebuild switch --flake . --impure<CR>', { desc = 'Nix Reload' })
   vim.keymap.set('t', '<Insert>nu', 'nix flake update<CR>', { desc = 'Nix Update' })
+
+  require 'sahilkm/keymaps/terminal.lua'
 end
 
 return M
