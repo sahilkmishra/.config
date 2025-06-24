@@ -78,7 +78,7 @@ M.setup = function()
   vim.keymap.set('t', '<Insert>nn', 'sudo nixos-rebuild switch --flake . --impure<CR>', { desc = 'Nix Reload' })
   vim.keymap.set('t', '<Insert>nu', 'nix flake update<CR>', { desc = 'Nix Update' })
 
-  require 'sahilkm/keymaps/terminal.lua'
+  require('sahilkm/keymaps/terminal').setup()
 end
 
 return M

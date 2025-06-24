@@ -8,18 +8,18 @@ vim.lsp.inlay_hint.enable(true)
 
 require('sahilkm.keymaps').setup()
 require('sahilkm.terminal').setup()
- vim.lsp.enable({
-      "clangd",
-      "lua_ls",
-      "html",
-      "cssls",
-      "ts_ls",
-      "basedpyright",
-      "ruff",
-      "nixd",
-      "rnix-lsp",
-      "nil"
-    })
+vim.lsp.enable {
+  'clangd',
+  'lua_ls',
+  'html',
+  'cssls',
+  'ts_ls',
+  'basedpyright',
+  'ruff',
+  'nixd',
+  'rnix-lsp',
+  'nil',
+}
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
