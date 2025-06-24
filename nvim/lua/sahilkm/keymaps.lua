@@ -79,6 +79,7 @@ M.setup = function()
   vim.keymap.set('t', '<Insert>nu', 'nix flake update<CR>', { desc = 'Nix Update' })
 
   require('sahilkm/keymaps/terminal').setup()
+  require('sahilkm/keymaps/buffer_toggles').setup()
 end
 
 return M
