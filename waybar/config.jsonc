@@ -147,6 +147,8 @@
 		// "clock"
 
 		"modules-right": [
+			"custom/obsidian",
+			"custom/godot",
 			"custom/plasticity",
 			"custom/zeal-documentation",
 			"custom/github-desktop"
