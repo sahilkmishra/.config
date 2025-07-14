@@ -6,6 +6,20 @@ vim.g.maplocalleader = ' '
 vim.g.filetype = true
 vim.lsp.inlay_hint.enable(true)
 
+vim.diagnostic.config {
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = '',
+      [vim.diagnostic.severity.WARN] = '',
+    },
+    linehl = {
+      [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+    },
+    numhl = {
+      [vim.diagnostic.severity.WARN] = 'WarningMsg',
+    },
+  },
+}
 require('sahilkm.keymaps').setup()
 require('sahilkm.terminal').setup()
 vim.lsp.enable {
