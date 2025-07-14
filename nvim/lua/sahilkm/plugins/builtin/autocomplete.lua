@@ -65,6 +65,8 @@ return {
     },
     config = function()
       -- See `:help cmp`
+      vim.o.wildmenu = false
+      vim.o.wildmode = ''
       local cmp = require 'cmp'
       local luasnip = require 'luasnip'
       luasnip.config.setup {}
