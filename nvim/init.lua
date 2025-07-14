@@ -1,6 +1,8 @@
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
+vim.o.wildmenu = false
+vim.o.wildmode = ''
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.filetype = true
@@ -22,7 +24,7 @@ vim.diagnostic.config {
 }
 require('sahilkm.keymaps').setup()
 require('sahilkm.terminal').setup()
-vim.lsp.enable {
+--[[ vim.lsp.enable {
   'clangd',
   'lua_ls',
   'html',
@@ -33,7 +35,7 @@ vim.lsp.enable {
   'nixd',
   'rnix-lsp',
   'nil',
-}
+} ]]
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
