@@ -1,7 +1,9 @@
 return {
   { -- Fuzzy Finder (files, lsp, etc)
+    lazy = false,
     'nvim-telescope/telescope.nvim',
-    event = 'VimEnter',
+    event = 'VeryLazy',
+    -- event = 'VimEnter',
     branch = '0.1.x',
     dependencies = {
       'xiyaowong/telescope-emoji.nvim',
